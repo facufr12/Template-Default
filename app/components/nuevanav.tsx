@@ -43,7 +43,7 @@ const Navbar = () => {
           )}
         </div>
         <ul
-          className={`md:flex mt-2 mr-4 justify-center md:justify-end space-x-4 md:space-x-8 font-medium ${
+          className={`md:flex mt-2  mr-10 justify-center md:justify-end space-x-4 md:space-x-8 font-medium ${
             isOpenMenu ? "block" : "hidden"
           }`}
         >
