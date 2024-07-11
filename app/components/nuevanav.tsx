@@ -29,7 +29,7 @@ const Navbar = () => {
 
         {/* Menú principal */}
         <div className="flex-grow text-black text-center md:text-right uppercase relative">
-          <div className="flex justify-center items-center md:hidden absolute left-30 right-0 top-0 bottom-0">
+          <div className="flex justify-center items-center md:hidden absolute left-20 right-0 top-0 bottom-0">
             {!isOpenMenu && (
               <button
                 onClick={toggleMenu}
