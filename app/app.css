@@ -71,9 +71,10 @@ body {
     margin-left: 1rem;
     margin-right: 1rem;
     padding: 2rem;
-
-    margin-top: 12rem; /* Ajusta este valor según sea necesario */
-    border-radius: 20px;  }
+    margin-top: 2rem; /* Ajusta este valor según sea necesario */
+    border-radius: 20px;
+    min-height: 40rem; /* Ajusta este valor según sea necesario */
+  }
 }
 #sucursales {
   background-image: url(../public/assets/imagenrodri.jpg);
