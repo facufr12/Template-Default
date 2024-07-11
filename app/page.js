@@ -9,28 +9,23 @@ import Marquee from "./components/marquee";
 export default function Home() {
   return (
     <main>
-      {/* Sección de Header */}
-      <section id="header">
-        <div className="imgheader">
-          <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-            <Navbar />
-            <div className="flex items-center justify-center">
-              <div className="flex mx-auto">
-                <Image
-                  src={Descuento}
-                  alt="Descuento"
-                  width={500}
-                  height={300}
-                  className="mt-[3cm] w-center"
-                />
-              </div>
-            </div>
-            <div className="mt-14 flex items-center justify-center">
-              <SignupFormDemo className="md:mr-8 w-full" />
+      <section id="header" className="bg-gray-100">
+      <div className="imgheader">
+        <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+          <Navbar />
+          <div className="flex items-center justify-center">
+            <div className="flex flex-col items-start mx-auto space-y-4">
+              <h1 className="text-4xl md:text-7xl font-bold text-white-900">Medicina Prepaga</h1>
+              <h2 className="text-2xl md:text-5xl font-bold text-white-600">Cotizá tu Plan</h2>
+              <h2 className="text-2xl md:text-4xl font-bold text-white-600">Hasta 50% de Ahorro</h2>
             </div>
           </div>
+          <div className="mt-14 flex items-center justify-center">
+            <SignupFormDemo className="md:mr-8 w-full" />
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
       {/* Sección de Planes */}
 
@@ -42,10 +37,7 @@ export default function Home() {
       </section>
 
       {/* Sección de Infinite Moving Cards */}
-      <section id="sucursales">
-        <div></div>
-      </section>
-
+   
       <section className="marqueee">
         <Marquee />
       </section>

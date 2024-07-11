@@ -22,6 +22,7 @@ body {
 .imgheader {
   background-image: url('../public/assets/familia4.jpg');
   background-size: cover;
+ 
   background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
 }
 
