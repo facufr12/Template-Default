@@ -41,11 +41,13 @@ body {
   z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
 }
 
-@media (max-width: 768px) { /* Ajusta el tamaño según sea necesario */
+@media (max-width: 768px) {
   .imgheader {
-    background-position: center; /* Cambia la posición para que la imagen esté más arriba */
-   
-    }
+    background-size: cover; /* Ajusta el tamaño para cubrir completamente el contenedor */
+    background-position: center top; /* Centra la imagen verticalmente arriba */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    min-height: 100vh; /* Ajusta la altura mínima al 100% del viewport height */
+  }
   #header{
     padding: auto;
     margin: auto;
