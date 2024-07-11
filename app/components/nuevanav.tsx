@@ -29,7 +29,7 @@ const Navbar = () => {
 
         {/* Menú principal */}
         <div className="flex-grow text-black text-center md:text-right uppercase relative">
-          <div className="flex justify-center items-center md:hidden absolute left-0 right-0 top-0 bottom-0">
+          <div className="flex justify-center items-center md:hidden absolute left-30 right-0 top-0 bottom-0">
             {!isOpenMenu && (
               <button
                 onClick={toggleMenu}
@@ -65,7 +65,7 @@ const Navbar = () => {
 
         <button
           onClick={scrollToForm}
-          className="px-3 md:px-6 ml-1 md:ml-3 py-2 md:py-3 rounded-full bg-[#E82E8A] text-white text-xs md:text-base font-bold tracking-widest uppercase transform hover:scale-105 hover:bg-gray-700 transition-colors duration-200"
+          className="px-6 ml-1 py-4 md:py-3 hidden md:block rounded-full bg-[#E82E8A] text-white text-xs  font-bold tracking-widest uppercase transform hover:scale-105 hover:bg-gray-700 transition-colors duration-200"
         >
           Solicitá Asesor
         </button>
@@ -78,11 +78,8 @@ const Navbar = () => {
 const NavItem = ({ href, children, onClick }) => {
   return (
     <li className="relative">
-    <Link href={href}>
-        {children}
-      
-    </Link>
-  </li>
+      <Link href={href}>{children}</Link>
+    </li>
   );
 };
 

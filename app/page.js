@@ -9,8 +9,8 @@ import Marquee from "./components/marquee";
 export default function Home() {
   return (
     <main>
-      <section id="header" className="bg-gray-100">
-      <div className="imgheader">
+      <section id="header " className=" ">
+      <div className="imgheader   ">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
           <Navbar />
           <div className="flex items-center justify-center">
