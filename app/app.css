@@ -1,0 +1,155 @@
+body {
+  /* Establece la imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Estilos específicos para diferentes secciones */
+ #nuestrosplanes, #planes, #sucursales, #planesmostrar, #footer {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+#header {
+  min-height: 100vh;
+}
+
+.imgheader {
+  background-image: url('../public/assets/familia4.jpg');
+  background-size: cover;
+  background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
+}
+
+@media (max-width: 768px) { /* Ajusta el tamaño según sea necesario */
+  .imgheader {
+    background-position: center; /* Cambia la posición para que la imagen esté más arriba */
+  }
+  #header{
+    padding: auto;
+    margin: auto;
+  }
+  
+}
+
+#nuestrosplanes {
+  background-image: url(../public/assets/familia4.jpg);
+}
+
+#planes {
+  background-image: url(./webpimagenes/planes1.webp);
+}
+
+#sucursales {
+  background-image: url(../public/assets/imagenrodri.jpg);
+}
+
+#planesmostrar {
+  background-color:whitesmoke;
+}
+
+#footer {
+  /* Asegúrate de definir una imagen de fondo específica o color para el footer */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Estilos para elementos específicos dentro de las secciones */
+.somospyme {
+  font-size: 25px;
+  color: #ffffff;
+}
+
+.somospyme2 {
+  font-size: 20px;
+  color: #fff7f7;
+}
+
+
+.izqpyme {
+  padding: 0px 40px;
+}
+
+.pymehead {
+  font-size: 38px;
+  font-weight: bold;
+  margin-top: 40px;
+  color: #1f1c1c;
+}
+
+/* Asegúrate de definir todos los estilos necesarios */
+.logo-image {
+  width: 100px; /* Tamaño por defecto */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+@media (max-width: 768px) {
+  /* Estilos específicos para dispositivos móviles */
+  .logo-image {
+    width: 100px; /* Tamaño reducido para dispositivos móviles */
+  }
+}
+.marquee-container {
+  background-color: #f0f0f0;
+  padding: 30px; /* Espaciado interno */
+  overflow: hidden; /* Ocultar desbordamiento */
+}
+
+.marquee {
+  display: flex;
+  animation: marquee 30s linear infinite; /* Animación de desplazamiento */
+}
+
+.provider-sponsor {
+  background-color: transparent;
+  margin-right: 40px; /* Espaciado entre imágenes */
+  object-fit: contain; /* Ajustar el tamaño manteniendo la relación de aspecto */
+  border-radius: 5px; /* Borde redondeado */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee {
+    animation-duration: 60s; /* Ajustar duración para pantallas más pequeñas */
+  }
+
+  .provider-sponsor {
+    width: 80px; /* Ajustar tamaño de imágenes para pantallas más pequeñas */
+    height: 40px;
+  }
+}
+.section-footer-legal {
+  text-align: center; /* Centra el texto horizontalmente */
+  padding: 10px; /* Agrega espacio alrededor del contenido */
+  background-color: #1f2531;
+  width: 100%;
+  white-space: pre-line;
+font-size: 12px;
+line-height: 1.875em;
+  
+}
+
+.section-footer-legal-title {
+  font-weight: bold; /* Texto en negrita para el título */
+}
+
+.section-footer-legal-description {
+  line-height: 1.4; /* Espaciado entre líneas */
+  max-width: 100px; /* Ancho máximo del texto */
+  margin: 0 auto; /* Centra el bloque de texto horizontalmente */
+  white-space: pre-line;
+}
