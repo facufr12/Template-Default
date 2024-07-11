@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Logo from "../../public/assets/logomedicals.png";
 import { FaBars } from "react-icons/fa";
-import ".././App.css";
+import "../app.css";
 import { SignupFormDemo } from "./formdemo";
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
