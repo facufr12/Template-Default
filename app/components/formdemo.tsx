@@ -24,7 +24,7 @@ export function SignupFormDemo() {
   return (
     <div
     id="formid"
-    className="max-w-md w-full mx-auto md:rounded-lg rounded-none md:rounded-3xl p-2 md:p-8 shadow-input bg-white dark:bg-black"
+    className="max-w-md mt-8  w-full mx-auto md:rounded-lg rounded-none md:rounded-3xl p-2 md:p-8 shadow-input bg-white dark:bg-black"
   >
     <h2 className="font-bold text-xl lg:text-white-900 text-neutral-800 dark:text-neutral-200">
       Solicitá Asesor
