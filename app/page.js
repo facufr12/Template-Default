@@ -27,7 +27,7 @@ export default function Home() {
         </div>
       </div>
       <div className="mt-14 flex items-center justify-center">
-        <SignupFormDemo className="md:mr-8 w-full" />
+        <SignupFormDemo className="w-full" />
       </div>
     </div>
   </div>

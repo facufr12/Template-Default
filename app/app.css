@@ -61,6 +61,20 @@ body {
   background-image: url(./webpimagenes/planes1.webp);
 }
 
+
+#formid {
+  /* Default styles here */
+}
+
+@media (max-width: 768px) {
+  #formid {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 2rem;
+
+    margin-top: 12rem; /* Ajusta este valor según sea necesario */
+    border-radius: 20px;  }
+}
 #sucursales {
   background-image: url(../public/assets/imagenrodri.jpg);
 }
