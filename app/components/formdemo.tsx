@@ -3,7 +3,7 @@ import React, { useRef, useState } from "react";
 import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../lib/utils";
-
+ // 
 export function SignupFormDemo() {
   const formRef = useRef(null);
   const [submitting, setSubmitting] = useState(false);
@@ -14,7 +14,7 @@ export function SignupFormDemo() {
     setSubmitting(true);
 
     try {
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbwepYW83F82OUCkOh4QJb26ZMcAtx2-AvTcOKAXkCX2-H9R8L7uTuwqa-nlc2_YMndAqQ/exec';
+      const scriptURL = '';
       const formData = new FormData(formRef.current);
 
       const response = await fetch(scriptURL, {
