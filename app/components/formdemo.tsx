@@ -37,18 +37,18 @@ export function SignupFormDemo() {
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
           <Label htmlFor="firstname">NOMBRE Y APELLIDO</Label>
-          <Input id="name" placeholder="Nombre y Apellido" type="text" />
+          <Input id="name" placeholder="NOMBRE Y APELLIDO" type="text" />
         </LabelInputContainer>
         <LabelInputContainer>
           <Label htmlFor="firstname">WHATSAPP</Label>
-          <Input id="phone" placeholder="Whatsapp" type="text" />
+          <Input id="phone" placeholder="WHATSAPP" type="text" />
         </LabelInputContainer>
       </div>
       <LabelInputContainer className="mb-4">
         <Label htmlFor="email">EMAIL </Label>
         <Input
           id="email"
-          placeholder="usuario@hotmail.com"
+          placeholder="USUARIO@HOTMAIL.COM"
           type="email"
           className="mobile-form-input"
         />
