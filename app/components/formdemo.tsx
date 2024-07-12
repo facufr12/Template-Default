@@ -36,12 +36,16 @@ export function SignupFormDemo() {
     <form className="my-10">
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
-          <Label htmlFor="firstname">Nombre y Apellido</Label>
-          <Input id="name" placeholder="Nombre" type="text" />
+          <Label htmlFor="firstname">NOMBRE Y APELLIDO</Label>
+          <Input id="name" placeholder="Nombre y Apellido" type="text" />
+        </LabelInputContainer>
+        <LabelInputContainer>
+          <Label htmlFor="firstname">WHATSAPP</Label>
+          <Input id="phone" placeholder="Whatsapp" type="text" />
         </LabelInputContainer>
       </div>
       <LabelInputContainer className="mb-4">
-        <Label htmlFor="email">Email </Label>
+        <Label htmlFor="email">EMAIL </Label>
         <Input
           id="email"
           placeholder="usuario@hotmail.com"
@@ -50,24 +54,146 @@ export function SignupFormDemo() {
         />
       </LabelInputContainer>
       <LabelInputContainer className="mb-4">
-        <Label htmlFor="telefono">Telefono</Label>
-        <Input
-          id="telefono"
-          placeholder="Telefono"
-          type="telefono"
-          className="mobile-form-input"
-        />
-      </LabelInputContainer>
+  <Label htmlFor="localidad" className="block text-gray-700 text-sm font-bold mb-2">LOCALIDAD</Label>
+  <Label>
+  <select 
+    id="localidad" 
+    name="localidad" 
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+  >
+    
+    <option value="consulta">LOCALIDAD</option>
+    <option value="CABA">CABA</option>
+    <option value="Almirante Brown">ALMIRANTE BROWN</option>
+    <option value="Avellaneda">AVELLANEDA</option>
+    <option value="Berazategui">BERAZATEGUI</option>
+    <option value="Esteban Echeverría">ESTEBAN ECHEVERRÍA</option>
+    <option value="Ezeiza">EZEIZA</option>
+    <option value="Florencio Varela">FLORENCIO VARELA</option>
+    <option value="General San Martín">GENERAL SAN MARTIN</option>
+    <option value="General Rodriguez">GENERAL RODRIGUEZ</option>
+    <option value="Hurlingham">HURLINGHAM</option>
+    <option value="Ituzaingó">ITUZAINGÓ</option>
+    <option value="José C. Paz">JOSÉ C. PAZ</option>
+    <option value="La Matanza">LA MATANZA</option>
+    <option value="Lanús">LANÚS</option>
+    <option value="Lomas de Zamora">LOMAS DE ZAMORA</option>
+    <option value="Malvinas Argentinas">MALVINAS ARGENTINAS</option>
+    <option value="Marcos Paz">MARCOS PAZ</option>
+    <option value="Merlo">MERLO</option>
+    <option value="Moreno">MORENO</option>
+    <option value="Morón">MORÓN</option>
+    <option value="Pilar">PILAR</option>
+    <option value="Quilmes">QUILMES</option>
+    <option value="San Fernando">SAN FERNANDO</option>
+    <option value="San Isidro">SAN ISIDRO</option>
+    <option value="San Miguel">SAN MIGUEL</option>
+    <option value="Tigre">TIGRE</option>
+    <option value="Tres de Febrero">TRES DE FEBRERO</option>
+    <option value="Vicente López">VICENTE LÓPEZ</option>
+    <option value="Otra">OTRA</option>
+  </select>
+    </Label>
+</LabelInputContainer>
+
+
+<LabelInputContainer className="mb-4 relative">
+  <Label htmlFor="edad-titular" className="block text-gray-700 text-sm font-bold mb-2">EDAD DEL TITULAR</Label>
+  <select 
+    id="edad-titular" 
+    name="edad-titular" 
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+  >
+    <option value="edad-titular">EDAD DEL TITULAR</option>
+    <option value="18 años">18 años</option>
+    <option value="19 años">19 años</option>
+    <option value="20 años">20 años</option>
+    <option value="21 años">21 años</option>
+    <option value="22 años">22 años</option>
+    <option value="23 años">23 años</option>
+    <option value="24 años">24 años</option>
+    <option value="25 años">25 años</option>
+    <option value="26 años">26 años</option>
+    <option value="27 años">27 años</option>
+    <option value="28 años">28 años</option>
+    <option value="29 años">29 años</option>
+    <option value="30 años">30 años</option>
+    <option value="31 años">31 años</option>
+    <option value="32 años">32 años</option>
+    <option value="33 años">33 años</option>
+    <option value="34 años">34 años</option>
+    <option value="35 años">35 años</option>
+    <option value="36 años">36 años</option>
+    <option value="37 años">37 años</option>
+    <option value="38 años">38 años</option>
+    <option value="39 años">39 años</option>
+    <option value="40 años">40 años</option>
+    <option value="41 años">41 años</option>
+    <option value="42 años">42 años</option>
+    <option value="43 años">43 años</option>
+    <option value="44 años">44 años</option>
+    <option value="45 años">45 años</option>
+    <option value="46 años">46 años</option>
+    <option value="47 años">47 años</option>
+    <option value="48 años">48 años</option>
+    <option value="49 años">49 años</option>
+    <option value="50 años">50 años</option>
+    <option value="51 años">51 años</option>
+    <option value="52 años">52 años</option>
+    <option value="53 años">53 años</option>
+    <option value="54 años">54 años</option>
+    <option value="55 años">55 años</option>
+    <option value="56 años">56 años</option>
+    <option value="57 años">57 años</option>
+    <option value="58 años">58 años</option>
+    <option value="59 años">59 años</option>
+    <option value="60 años">60 años</option>
+    <option value="61 a 65 años">61 a 65 años</option>
+  </select>
+ 
+  <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+   
+  </div>
+</LabelInputContainer>
+
+
+<LabelInputContainer className="mb-4">
+  <Label htmlFor="tipo-afiliacion" className="block text-gray-700 text-sm font-bold mb-2">Tipo de Afiliación</Label>
+  <select 
+    id="tipo-afiliacion" 
+    name="tipo-afiliacion" 
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
   
-      <LabelInputContainer className="mb-8">
-        <Label htmlFor="consulta">Consulta</Label>
-        <Input
-          id="consulta"
-          placeholder="Consulta"
-          type="text"
-          className="mobile-form-input"
-        />
-      </LabelInputContainer>
+  >
+    <option value="tipo-afiliacion">TIPO DE AFILIACIÓN</option>
+    <option value="particular-autonomo">PARTICULAR / AUTÓNOMO</option>
+    <option value="con-recibo-sueldo">CON RECIBO DE SUELDO</option>
+    <option value="monotributista">MONOTRIBUTISTA</option>
+  </select>
+</LabelInputContainer>
+<LabelInputContainer className="mb-12">
+  <Label htmlFor="grupo-familiar" className="block text-gray-700 text-sm font-bold mb-2">Grupo Familiar</Label>
+  <select 
+    id="grupo-familiar" 
+    name="grupo-familiar" 
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+  >
+    <option value="grupo-familiar">GRUPO FAMILIAR</option>
+    <option value="individual">INDIVIDUAL</option>
+    <option value="matrimonio">MATRIMONIO</option>
+    <option value="matrimonio-1-hijo">MATRIMONIO + 1 HIJO</option>
+    <option value="matrimonio-2-hijos">MATRIMONIO + 2 HIJOS</option>
+    <option value="matrimonio-3-hijos">MATRIMONIO + 3 HIJOS</option>
+    <option value="individual-1-hijo">INDIVIDUAL + 1 HIJO</option>
+    <option value="individual-2-hijos">INDIVIDUAL + 2 HIJOS</option>
+    <option value="individual-3-hijos">INDIVIDUAL + 3 HIJOS</option>
+    <option value="otro">OTRO</option>
+  </select>
+</LabelInputContainer>
+
+
+
+
   
       <button
         className="bg-gradient-to-br from-pink-600 to-pink-400 relative group/btn w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset]"
