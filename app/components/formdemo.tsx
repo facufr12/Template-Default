@@ -70,12 +70,12 @@ export function SignupFormDemo() {
         />
       </LabelInputContainer>
       <LabelInputContainer className="mb-4">
-  <Label htmlFor="localidad" className="block text-gray-700 text-sm font-bold mb-2">LOCALIDAD</Label>
+  <Label htmlFor="localidad" className="block text-gray-700 text-sm font-medium mb-2">LOCALIDAD</Label>
   <Label>
   <select 
     id="localidad" 
     name="localidad" 
-    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
     
     <option value="consulta">LOCALIDAD</option>
@@ -114,11 +114,11 @@ export function SignupFormDemo() {
 
 
 <LabelInputContainer className="mb-4 relative">
-  <Label htmlFor="edad-titular" className="block text-gray-700 text-sm font-bold mb-2">EDAD DEL TITULAR</Label>
+  <Label htmlFor="edad-titular" className="block text-gray-700 text-sm font-medium mb-2">EDAD DEL TITULAR</Label>
   <select 
     id="edad-titular" 
     name="edad-titular" 
-    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
     <option value="edad-titular">EDAD DEL TITULAR</option>
     <option value="18 años">18 años</option>
@@ -174,11 +174,11 @@ export function SignupFormDemo() {
 
 
 <LabelInputContainer className="mb-4">
-  <Label htmlFor="tipo-afiliacion" className="block text-gray-700 text-sm font-bold mb-2">Tipo de Afiliación</Label>
+  <Label htmlFor="tipo-afiliacion" className="block text-gray-700 text-sm font-medium mb-2">TIPO DE AFILIACIÓN</Label>
   <select 
     id="tipo-afiliacion" 
     name="tipo-afiliacion" 
-    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   
   >
     <option value="tipo-afiliacion">TIPO DE AFILIACIÓN</option>
@@ -188,11 +188,11 @@ export function SignupFormDemo() {
   </select>
 </LabelInputContainer>
 <LabelInputContainer className="mb-12">
-  <Label htmlFor="grupo-familiar" className="block text-gray-700 text-sm font-bold mb-2">Grupo Familiar</Label>
+  <Label htmlFor="grupo-familiar" className="block text-gray-700 text-sm font-medium mb-2">GRUPO FAMILIAR</Label>
   <select 
     id="grupo-familiar" 
     name="grupo-familiar" 
-    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
     <option value="grupo-familiar">GRUPO FAMILIAR</option>
     <option value="individual">INDIVIDUAL</option>
