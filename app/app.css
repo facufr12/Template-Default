@@ -21,12 +21,7 @@ body {
   min-height: 100vh;
 }
 
-.imgheader {
-  
-  background-image: url('../public/assets/familia4.jpg');
-  position: relative;
-  z-index: 1; /* Asegúrate de que el contenido dentro del header tenga un índice z mayor */
-}
+
 .imgheader::before {
   content: "";
   position: absolute;
@@ -59,9 +54,6 @@ body {
   background-image: url(../public/assets/familia4.jpg);
 }
 
-#planes {
-  background-image: url(./webpimagenes/planes1.webp);
-}
 
 
 #formid {

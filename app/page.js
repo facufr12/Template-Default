@@ -3,7 +3,6 @@ import Link from "next/link";
 import "./app.css";
 import Navbar from "./components/nuevanav";
 import { SignupFormDemo } from "./components/formdemo";
-import Descuento from "../public/assets/descuentoavailan.png";
 import { WobbleCardDemo } from "./components/woobledemo";
 import Marquee from "./components/marquee";
 export default function Home() {
