@@ -1,23 +1,39 @@
-import React from "react";
+"use client"
+import React, { useRef, useState } from "react";
 import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../lib/utils";
-import {
-  IconBrandGithub,
-  IconBrandGoogle,
-  IconBrandOnlyfans,
-} from "@tabler/icons-react";
 
 export function SignupFormDemo() {
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form submitted");
-  };
+  const formRef = useRef(null);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
-  const scrollToForm = () => {
-    const formElement = document.getElementById("formid");
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    setSubmitting(true);
+
+    try {
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwepYW83F82OUCkOh4QJb26ZMcAtx2-AvTcOKAXkCX2-H9R8L7uTuwqa-nlc2_YMndAqQ/exec';
+      const formData = new FormData(formRef.current);
+
+      const response = await fetch(scriptURL, {
+        method: "POST",
+        body: formData
+      });
+
+      if (response.ok) {
+        // Formulario enviado con éxito
+        window.location.href = "gracias.js"; // Redirige a la página de agradecimiento
+      } else {
+        // Error en el envío del formulario
+        throw new Error("Ocurrió un error al enviar el formulario.");
+      }
+    } catch (error) {
+      // Captura de errores de red u otros errores
+      setError(error.message);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -32,8 +48,8 @@ export function SignupFormDemo() {
     <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
       Acercanos tus datos y se pondran en contacto con vos.
     </p>
-  
-    <form className="my-10">
+
+      <form  ref={formRef} action="#" method="POST" className="my-10" onSubmit={onSubmit}>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
           <Label htmlFor="firstname">NOMBRE Y APELLIDO</Label>
@@ -193,18 +209,23 @@ export function SignupFormDemo() {
 
 
 
-
-  
-      <button
-        className="bg-gradient-to-br from-pink-600 to-pink-400 relative group/btn w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset]"
-        type="submit"
-      >
-        Solicitá Asesor &rarr;
-        <BottomGradient />
-      </button>
-    </form>
-  </div>
-  
+        {error && (
+          <div className="text-red-500 text-sm mt-2 mb-4">
+            Ocurrió un error al enviar el formulario: {error}
+          </div>
+        )}
+        <button
+          className={`bg-gradient-to-br from-pink-600 to-pink-400 relative group/btn w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
+            submitting ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+          type="submit"
+          disabled={submitting}
+        >
+          {submitting ? "Enviando..." : "Solicitá Asesor →"}
+          <BottomGradient />
+        </button>
+      </form>
+    </div>
   );
 }
 
