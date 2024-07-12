@@ -69,6 +69,7 @@ export function SignupFormDemo() {
           className="mobile-form-input"
         />
       </LabelInputContainer>
+      <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
       <LabelInputContainer className="mb-4">
   <Label htmlFor="localidad" className="block text-gray-700 text-sm font-medium mb-2">LOCALIDAD</Label>
   <Label>
@@ -171,8 +172,8 @@ export function SignupFormDemo() {
    
   </div>
 </LabelInputContainer>
-
-
+</div>
+<div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
 <LabelInputContainer className="mb-4">
   <Label htmlFor="tipo-afiliacion" className="block text-gray-700 text-sm font-medium mb-2">TIPO DE AFILIACIÓN</Label>
   <select 
@@ -207,7 +208,7 @@ export function SignupFormDemo() {
   </select>
 </LabelInputContainer>
 
-
+</div>
 
         {error && (
           <div className="text-red-500 text-sm mt-2 mb-4">
