@@ -1,6 +1,5 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800&display=swap');
 
 
 
@@ -8,10 +7,11 @@ body {
   /* Establece la imagen de fondo */
   background-size: cover;
   background-position: center;
+  
+  font-family: "acumin-variable",sans-serif !important;
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100vh;
-  font-family: 'Acumin Variable Concept ExtraCo','Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -20,9 +20,10 @@ body {
   /* color: gray; */
 }
 * {
-  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
+  
+  font-family: "acumin-variable",sans-serif !important ; 
   padding: 0;
   box-sizing: border-box;
   /* font-size: medium; */

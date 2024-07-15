@@ -100,10 +100,11 @@ export function SignupFormDemo() {
             </Label>
             <Label>
             <select
-              id="localidad"
-              name="localidad"
-              className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
-            >
+      id="localidad"
+      name="localidad"
+      className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+      style={{ height: '2.5rem' }} // Ajusta la altura según tus necesidades
+    >
                 <option value="consulta">Seleccione Localidad</option>
                 <option value="CABA">CABA</option>
                 <option value="Almirante Brown">ALMIRANTE BROWN</option>

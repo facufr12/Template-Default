@@ -26,7 +26,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full bg-white shadow-lg fixed top-0 z-50">
+    <nav className="w-full  bg-white shadow-lg fixed top-0 z-50">
       {/* Línea rosa encima del nav */}
       <div className="bg-[#E82E8A] h-3 w-full"></div> {/* Línea de color #E82E8A */}
 
@@ -47,20 +47,21 @@ const Navbar = () => {
             </button>
           </div>
           <ul
-            className={`md:flex mt-2 mr-10 justify-center md:justify-end space-x-4 md:space-x-8 font-medium ${
-              isOpenMenu ? "block" : "hidden"
-            }`}
-          >
-            <NavItem href="#" onClick={closeMenu}>
-              Sucursales
-            </NavItem>
-            <NavItem href="#" onClick={closeMenu}>
-              Quienes Somos
-            </NavItem>
-            <NavItem href="#" onClick={closeMenu}>
-              Cartilla
-            </NavItem>
-          </ul>
+  className={`md:flex mt-2 mr-10 justify-center md:justify-end space-x-4 md:space-x-8 font-medium ${
+    isOpenMenu ? "block" : "hidden"
+  }`}
+>
+  <NavItem href="#" onClick={closeMenu}>
+    Sucursales
+  </NavItem>
+  <NavItem href="#" onClick={closeMenu}>
+    Quienes Somos
+  </NavItem>
+  <NavItem href="#" onClick={closeMenu}>
+    Cartilla
+  </NavItem>
+</ul>
+
         </div>
 
         <button

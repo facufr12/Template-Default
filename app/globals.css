@@ -1,20 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.example {
+}
 
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-
-  font-family: 'Acumin Variable Concept ExtraCo';
- 
-
 }
 * {
-  font-family: 'Acumin Variable Concept ExtraCo','Open Sans', sans-serif;
-  font-weight: 400;
+  
+  font-family: "acumin-variable",sans-serif;
+  font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -22,7 +20,8 @@
   /* color: gray; */
 }
 body {
-background-image: url(/app/assets/familia.jpg) ;
+  
+  background-image: url(/app/assets/familia.jpg);
 }
 @media (prefers-color-scheme: dark) {
   :root {
@@ -35,7 +34,6 @@ background-image: url(/app/assets/familia.jpg) ;
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
-    
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
