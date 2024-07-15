@@ -4,7 +4,8 @@ import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../lib/utils";
  // 
-export function SignupFormDemo() {
+
+ export function SignupFormDemo() {
   const formRef = useRef(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
@@ -14,17 +15,18 @@ export function SignupFormDemo() {
     setSubmitting(true);
 
     try {
-      const scriptURL = '';
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbxI-4huVNr9h3Tb1i4vD2X9n4MYeCc1nEAY-Fdh-wz1iwV1iJfrif0f5yLRxxQg9Vs82g/exec';
       const formData = new FormData(formRef.current);
 
       const response = await fetch(scriptURL, {
+        redirect: "follow",
         method: "POST",
-        body: formData
+        body: formData,
       });
 
       if (response.ok) {
         // Formulario enviado con éxito
-        window.location.href = "gracias.js"; // Redirige a la página de agradecimiento
+        window.location.href = "/gracias"; // Redirige a la página de agradecimiento
       } else {
         // Error en el envío del formulario
         throw new Error("Ocurrió un error al enviar el formulario.");
@@ -52,21 +54,22 @@ export function SignupFormDemo() {
       <form  ref={formRef} action="#" method="POST" className="my-10" onSubmit={onSubmit}>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
-          <Label htmlFor="firstname">NOMBRE Y APELLIDO</Label>
-          <Input id="name" placeholder="NOMBRE Y APELLIDO" type="text" />
+          <Label htmlFor="name">NOMBRE Y APELLIDO</Label>
+          <Input id='name' placeholder="NOMBRE Y APELLIDO" type="name" required />
         </LabelInputContainer>
         <LabelInputContainer>
-          <Label htmlFor="firstname">WHATSAPP</Label>
-          <Input id="phone" placeholder="WHATSAPP" type="text" />
+          <Label htmlFor="phone">WHATSAPP</Label>
+          <Input id='phone' placeholder="WHATSAPP" type="tel"  required/>
         </LabelInputContainer>
       </div>
       <LabelInputContainer className="mb-4">
         <Label htmlFor="email">EMAIL </Label>
         <Input
-          id="email"
+          id='email'
           placeholder="USUARIO@HOTMAIL.COM"
           type="email"
           className="mobile-form-input"
+          required
         />
       </LabelInputContainer>
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
@@ -74,7 +77,7 @@ export function SignupFormDemo() {
   <Label htmlFor="localidad" className="block text-gray-700 text-sm font-medium mb-2">LOCALIDAD</Label>
   <Label>
   <select 
-    id="localidad" 
+    id='localidad'
     name="localidad" 
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
@@ -117,7 +120,7 @@ export function SignupFormDemo() {
 <LabelInputContainer className="mb-4 relative">
   <Label htmlFor="edad-titular" className="block text-gray-700 text-sm font-medium mb-2">EDAD DEL TITULAR</Label>
   <select 
-    id="edad-titular" 
+    id='edad-titular'
     name="edad-titular" 
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
@@ -177,7 +180,7 @@ export function SignupFormDemo() {
 <LabelInputContainer className="mb-4">
   <Label htmlFor="tipo-afiliacion" className="block text-gray-700 text-sm font-medium mb-2">TIPO DE AFILIACIÓN</Label>
   <select 
-    id="tipo-afiliacion" 
+    id='tipo-afiliacion'
     name="tipo-afiliacion" 
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   
@@ -191,7 +194,7 @@ export function SignupFormDemo() {
 <LabelInputContainer className="mb-12">
   <Label htmlFor="grupo-familiar" className="block text-gray-700 text-sm font-medium mb-2">GRUPO FAMILIAR</Label>
   <select 
-    id="grupo-familiar" 
+    id='grupo-familiar' 
     name="grupo-familiar" 
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
