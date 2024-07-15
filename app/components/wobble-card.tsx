@@ -2,15 +2,17 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { cn } from "../lib/utils";
-
+import {Noise, Noise2, Noise3, Noise4, Noise5} from "./Noisecomponents"
 export const WobbleCard = ({
   children,
   containerClassName,
   className,
+  NoiseComponent,
 }: {
   children: React.ReactNode;
   containerClassName?: string;
   className?: string;
+  NoiseComponent: React.ComponentType;
 }) => {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [isHovering, setIsHovering] = useState(false);
@@ -57,67 +59,10 @@ export const WobbleCard = ({
           }}
           className={cn("h-full px-4 py-20 sm:px-10", className)}
         >
-          <Noise />
+          < NoiseComponent />
           {children}
         </motion.div>
       </div>
     </motion.section>
-  );
-};
-
-const Noise = () => {
-  return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/MD150.webp)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    ></div>
-  );
-};
-
-
-const Noise2 = () => {
-  return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/MD250.webp)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    ></div>
-  );
-};
-
-const Noise3 = () => {
-  return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/MD350.webp)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    ></div>
-  );
-};
-
-const Noise4 = () => {
-  return (
-    <div
-      className="absolute inset-0 w-full h-full scale-[1.2] transform opacity-10 [mask-image:radial-gradient(#fff,transparent,75%)]"
-      style={{
-        backgroundImage: "url(/MD450.webp)",
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center",
-      }}
-    ></div>
   );
 };

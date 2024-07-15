@@ -46,7 +46,7 @@ export function SignupFormDemo() {
         Solicitá Asesor
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Acercanos tus datos y se pondran en contacto con vos.
+        Acercanos tus datos y nos pondremos en contacto con vos!.
       </p>
 
       <form
@@ -257,7 +257,7 @@ export function SignupFormDemo() {
           type="submit"
           disabled={submitting}
         >
-          {submitting ? "Enviando..." : "Solicitá Asesor →"}
+          {submitting ? "Enviando..." : "Solicitá un Asesor →"}
           <BottomGradient />
         </button>
       </form>

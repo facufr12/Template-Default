@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import { WobbleCard } from "./wobble-card";
@@ -15,16 +16,16 @@ import Plan250 from "../../public/assets/plan250.png";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { scrollToForm } from "./nuevanav";
-import md150 from "../../public/MD150.webp";
-import md250 from "../../public/MD250.webp";
-import md350 from "../../public/MD350.webp";
-import md450 from "../../public/MD450.webp";
 
+import { Noise, Noise2, Noise3, Noise4, Noise5 } from "./Noisecomponents";
 export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-12 gap-4 mt-4 max-w-7xl mx-auto">
       {/* Card 1 */}
-      <WobbleCard containerClassName="col-span-12 lg:col-span-6 bg-pink-800 min-h-[500px] lg:min-h-[400px]">
+      <WobbleCard
+        NoiseComponent={Noise5}
+        containerClassName="col-span-12 lg:col-span-6 bg-pink-800 min-h-[500px] lg:min-h-[400px]"
+      >
         <div className="max-w-xs mx-auto lg:max-w-full">
           <h2 className="text-left text-balance text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
             Medical’s Medicina Prepaga
@@ -59,7 +60,10 @@ export function WobbleCardDemo() {
       </WobbleCard>
 
       {/* Card 2 */}
-      <WobbleCard containerClassName="col-span-12 lg:col-span-6">
+      <WobbleCard
+        NoiseComponent={Noise5}
+        containerClassName="col-span-12 lg:col-span-6"
+      >
         <h2 className="text-left text-balance text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
           Medical’s es una empresa de salud fundada hace más de 35 años por
           profesionales de la medicina.
@@ -74,8 +78,10 @@ export function WobbleCardDemo() {
       <div className="col-span-12 flex flex-col lg:flex-row justify-center  gap-4 mt-4 mr">
         {/* Card Plan MD150 */}
         <a className="flex-1" target="_blank" rel="noopener noreferrer">
-          <WobbleCard   containerClassName="bg-gray-400 h-[420px] lg:w-[320px]">
-            
+          <WobbleCard
+            NoiseComponent={Noise}
+            containerClassName="bg-gray-400 h-[420px] lg:w-[320px]"
+          >
             <h2
               onClick={scrollToForm}
               className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
@@ -94,7 +100,10 @@ export function WobbleCardDemo() {
 
         {/* Card Plan MD250 */}
         <a className="flex-1" target="_blank" rel="noopener noreferrer">
-          <WobbleCard containerClassName="bg-blue-400 h-[420px] lg:w-[320px]">
+          <WobbleCard
+            NoiseComponent={Noise2}
+            containerClassName="bg-blue-400 h-[420px] lg:w-[320px]"
+          >
             <h2
               onClick={scrollToForm}
               className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
@@ -113,7 +122,10 @@ export function WobbleCardDemo() {
 
         {/* Card Plan MD350 */}
         <a className="flex-1" target="_blank" rel="noopener noreferrer">
-          <WobbleCard containerClassName="bg-blue-900 h-[420px] lg:w-[320px]">
+          <WobbleCard
+            NoiseComponent={Noise3}
+            containerClassName="bg-blue-900 h-[420px] lg:w-[320px]"
+          >
             <h2
               onClick={scrollToForm}
               className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
@@ -131,7 +143,10 @@ export function WobbleCardDemo() {
 
         {/* Card Plan MD450 */}
         <a className="flex-1" target="_blank" rel="noopener noreferrer">
-          <WobbleCard containerClassName="bg-gray-900 h-[420px] lg:w-[320px]">
+          <WobbleCard
+            NoiseComponent={Noise4}
+            containerClassName="bg-gray-900 h-[420px] lg:w-[320px]"
+          >
             <h2
               onClick={scrollToForm}
               className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
