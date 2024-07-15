@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import './globals.css'; 
+
 import "./app.css";
 import Navbar from "./components/nuevanav";
 import { SignupFormDemo } from "./components/formdemo";
@@ -9,42 +9,41 @@ import Marquee from "./components/marquee";
 export default function Home() {
   return (
     <main>
-  <section id="header" className="">
-  <div className="imgheader">
-    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-      <Navbar />
-      <div className="flex items-center justify-center">
-        <div className="flex flex-col items-start mx-auto space-y-4">
-          <h1 className="text-4xl md:text-7xl font-bold text-white-900 hidden md:block">
-            Medicina Prepaga
-          </h1>
-          <h2 className="text-2xl md:text-5xl font-bold text-white-600 hidden md:block">
-            Cotizá tu Plan
-          </h2>
-          <h2 className="text-2xl md:text-4xl font-bold text-white-600 hidden md:block">
-            Hasta 50% de Ahorro
-          </h2>
+      <section id="header" className="">
+        <div className="imgheader">
+          <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+            <Navbar />
+            <div className="flex items-center justify-center">
+              <div className="flex flex-col items-start mx-auto space-y-4">
+                <h1 className="text-4xl md:text-7xl font-bold text-white-900 hidden md:block">
+                  Medicina Prepaga
+                </h1>
+                <h2 className="text-2xl md:text-5xl font-bold text-white-600 hidden md:block">
+                  Cotizá tu Plan
+                </h2>
+                <h2 className="text-2xl md:text-4xl font-bold text-white-600 hidden md:block">
+                  Hasta 50% de Ahorro
+                </h2>
+              </div>
+            </div>
+            <div className="mt-14 flex items-center justify-center">
+              <SignupFormDemo className="w-full" />
+            </div>
+          </div>
         </div>
-      </div>
-      <div className="mt-14 flex items-center justify-center">
-        <SignupFormDemo className="w-full" />
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       {/* Sección de Planes */}
 
       {/* Sección de Demo de WobbleCard */}
-      <section id="planesmostrar" >
+      <section id="planesmostrar">
         <div className="max-w-screen-xl mx-auto py-8">
           <WobbleCardDemo />
         </div>
       </section>
 
       {/* Sección de Infinite Moving Cards */}
-   
+
       <section className="marqueee">
         <Marquee />
       </section>

@@ -15,6 +15,10 @@ import Plan250 from "../../public/assets/plan250.png";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { scrollToForm } from "./nuevanav";
+import md150 from "../../public/MD150.webp";
+import md250 from "../../public/MD250.webp";
+import md350 from "../../public/MD350.webp";
+import md450 from "../../public/MD450.webp";
 
 export function WobbleCardDemo() {
   return (
@@ -69,35 +73,34 @@ export function WobbleCardDemo() {
       {/* Cards de Planes */}
       <div className="col-span-12 flex flex-col lg:flex-row justify-center  gap-4 mt-4 mr">
         {/* Card Plan MD150 */}
-        <a
-          className="flex-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        <WobbleCard containerClassName="bg-gray-400 h-[420px] lg:w-[320px]">
-  <h2 onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-    Plan MD150
-  </h2>
-  <div className="flex flex-col justify-center items-center h-full">
-    <p className="text-sm text-center">
-      Permite un acceso integral a todos los servicios de nuestra Red de Prestadores, logrando un equilibrio perfecto entre precio y calidad de servicio.
-    </p>
-  </div>
-</WobbleCard>
-
+        <a className="flex-1" target="_blank" rel="noopener noreferrer">
+          <WobbleCard   containerClassName="bg-gray-400 h-[420px] lg:w-[320px]">
+            
+            <h2
+              onClick={scrollToForm}
+              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+            >
+              Plan MD150
+            </h2>
+            <div className="flex flex-col justify-center items-center h-full">
+              <p className="text-sm text-center">
+                Permite un acceso integral a todos los servicios de nuestra Red
+                de Prestadores, logrando un equilibrio perfecto entre precio y
+                calidad de servicio.
+              </p>
+            </div>
+          </WobbleCard>
         </a>
 
         {/* Card Plan MD250 */}
-        <a
-          className="flex-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="flex-1" target="_blank" rel="noopener noreferrer">
           <WobbleCard containerClassName="bg-blue-400 h-[420px] lg:w-[320px]">
-          <h2  onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-    
-    Plan M250
-  </h2>
+            <h2
+              onClick={scrollToForm}
+              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+            >
+              Plan M250
+            </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Ofrece una combinación equilibrada de costos asequibles y
@@ -109,15 +112,14 @@ export function WobbleCardDemo() {
         </a>
 
         {/* Card Plan MD350 */}
-        <a
-          className="flex-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="flex-1" target="_blank" rel="noopener noreferrer">
           <WobbleCard containerClassName="bg-blue-900 h-[420px] lg:w-[320px]">
-          <h2  onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-    Plan MD350
-  </h2>
+            <h2
+              onClick={scrollToForm}
+              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+            >
+              Plan MD350
+            </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Amplia cartilla con especialistas, sanatorios, clínicas y
@@ -128,15 +130,14 @@ export function WobbleCardDemo() {
         </a>
 
         {/* Card Plan MD450 */}
-        <a
-          className="flex-1"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="flex-1" target="_blank" rel="noopener noreferrer">
           <WobbleCard containerClassName="bg-gray-900 h-[420px] lg:w-[320px]">
-          <h2  onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-    Plan MD450
-  </h2>
+            <h2
+              onClick={scrollToForm}
+              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+            >
+              Plan MD450
+            </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Cartilla médica premium, atención personalizada y la más amplia

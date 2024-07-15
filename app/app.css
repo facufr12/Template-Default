@@ -1,11 +1,7 @@
-@font-face {
-  font-family: 'Acumin Variable Concept ExtraCo';
-  src: url('/fonts/AcuminVariableConceptExtraCo.woff2') format('woff2'),
-       url('/fonts/AcuminVariableConceptExtraCo.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Figtree:wght@600;700;800&display=swap');
+
 
 
 body {
@@ -24,7 +20,7 @@ body {
   /* color: gray; */
 }
 * {
-  font-family: 'Acumin Variable Concept ExtraCo','Open Sans', sans-serif !important;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -64,14 +60,14 @@ body {
 @media (max-width: 768px) {
   .imgheader::before {
     content: "";
-    position: absolute;
-    top: -6%; /* Mueve la imagen hacia arriba un 1% del contenedor */
+    position:fixed;
+    top: 0%; /* Mueve la imagen hacia arriba un 1% del contenedor */
     right: -20%; /* Mueve la imagen hacia la derecha un 40% del contenedor */
     width: 180%; /* Aumenta el ancho del fondo para cubrir el espacio extra de la derecha */
     height: 100%;
     background-size: 180% auto;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/assets/familia4.jpg');
-    background-size: 180% auto; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
+    background-size: 180au auto; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
     background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
     opacity: 0.8; /* Ajusta la opacidad aquí */
     z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
