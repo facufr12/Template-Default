@@ -6,16 +6,16 @@ import Logo from "../../public/assets/logomedicals.png";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "../app.css";
 import { SignupFormDemo } from "./formdemo";
-
+export const scrollToForm  = () => {
+  const formElement = document.getElementById("formid");
+  if (formElement) {
+    formElement.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+};
 const Navbar = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
 
-  const scrollToForm = () => {
-    const formElement = document.getElementById("formid");
-    if (formElement) {
-      formElement.scrollIntoView({ behavior: "smooth", block: "start" });
-    }
-  };
+
 
   const toggleMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -51,13 +51,13 @@ const Navbar = () => {
               isOpenMenu ? "block" : "hidden"
             }`}
           >
-            <NavItem href="https://medicals.ar/sucursales/" onClick={closeMenu}>
+            <NavItem href="#" onClick={closeMenu}>
               Sucursales
             </NavItem>
-            <NavItem href="https://medicals.ar/quienes-somos/" onClick={closeMenu}>
+            <NavItem href="#" onClick={closeMenu}>
               Quienes Somos
             </NavItem>
-            <NavItem href="https://medicals.ar/cartilla/" onClick={closeMenu}>
+            <NavItem href="#" onClick={closeMenu}>
               Cartilla
             </NavItem>
           </ul>

@@ -1,11 +1,6 @@
 import { Montserrat } from "next/font/google";
 import "./globals.css";
-const montserrat = Montserrat({
-  weight: ['300', '400', '500', '700'],
-  subsets: ['latin'],
-  display:'swap',
-  fallback: ['Arial', 'sans-serif'],
-});
+
 
 export const metadata = {
   title: "Medicals",
@@ -13,7 +8,7 @@ export const metadata = {
 
   
     icons: {
-      icon: ['/favicon.ico'],
+      icon: ['/favicon.png'],
      
     },
   
@@ -23,7 +18,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={montserrat.className}>{children}</body>
-    </html>
+    <body style={{ fontFamily: "'Acumin Variable Concept ExtraCo', Arial, sans-serif" }}>
+      {children}
+    </body>
+  </html>
   );
 }

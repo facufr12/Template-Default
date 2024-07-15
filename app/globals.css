@@ -2,12 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Acumin Variable Concept ExtraCo';
+  src: url('/path/to/AcuminVariableConceptExtraCo.woff2') format('woff2'),
+       url('/path/to/AcuminVariableConceptExtraCo.woff') format('woff');
+  font-weight: 400; /* Ajusta según las variantes que necesites */
+  font-style: normal;
+  font-display: swap;
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  font-family: "Montserrat";
 
+  font-family: 'Acumin Variable Concept ExtraCo';
+ 
+
+}
+* {
+  font-family: 'Acumin Variable Concept ExtraCo','Open Sans', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-size: medium; */
+  /* color: gray; */
 }
 body {
 background-image: url(/app/assets/familia.jpg) ;

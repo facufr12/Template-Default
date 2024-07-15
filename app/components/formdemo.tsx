@@ -3,13 +3,15 @@ import React, { useRef, useState } from "react";
 import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../lib/utils";
- // 
+import { useRouter } from "next/router"; // Importa useRouter desde Next.js
 
- export function SignupFormDemo() {
+
+export function SignupFormDemo() {
   const formRef = useRef(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
 
+  
   const onSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
@@ -26,7 +28,7 @@ import { cn } from "../lib/utils";
 
       if (response.ok) {
         // Formulario enviado con éxito
-        window.location.href = "/gracias"; // Redirige a la página de agradecimiento
+        router.push("/gracias"); // Redirige a la página de agradecimiento
       } else {
         // Error en el envío del formulario
         throw new Error("Ocurrió un error al enviar el formulario.");
@@ -55,18 +57,18 @@ import { cn } from "../lib/utils";
       <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
         <LabelInputContainer>
           <Label htmlFor="name">NOMBRE Y APELLIDO</Label>
-          <Input id='name' placeholder="NOMBRE Y APELLIDO" type="name" required />
+          <Input id='name' placeholder="Juan Gonzalez" type="name" required />
         </LabelInputContainer>
         <LabelInputContainer>
           <Label htmlFor="phone">WHATSAPP</Label>
-          <Input id='phone' placeholder="WHATSAPP" type="tel"  required/>
+          <Input id='phone' placeholder="11-5555-1111" type="tel"  required/>
         </LabelInputContainer>
       </div>
       <LabelInputContainer className="mb-4">
         <Label htmlFor="email">EMAIL </Label>
         <Input
           id='email'
-          placeholder="USUARIO@HOTMAIL.COM"
+          placeholder="Usuario@hotmail.com"
           type="email"
           className="mobile-form-input"
           required
@@ -82,7 +84,7 @@ import { cn } from "../lib/utils";
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
     
-    <option value="consulta">LOCALIDAD</option>
+    <option value="consulta">Seleccione Localidad</option>
     <option value="CABA">CABA</option>
     <option value="Almirante Brown">ALMIRANTE BROWN</option>
     <option value="Avellaneda">AVELLANEDA</option>
@@ -124,7 +126,7 @@ import { cn } from "../lib/utils";
     name="edad-titular" 
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
-    <option value="edad-titular">EDAD DEL TITULAR</option>
+    <option value="edad-titular">Seleccione Edad</option>
     <option value="18 años">18 años</option>
     <option value="19 años">19 años</option>
     <option value="20 años">20 años</option>
@@ -185,7 +187,7 @@ import { cn } from "../lib/utils";
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   
   >
-    <option value="tipo-afiliacion">TIPO DE AFILIACIÓN</option>
+    <option value="tipo-afiliacion">Seleccione Afiliación</option>
     <option value="particular-autonomo">PARTICULAR / AUTÓNOMO</option>
     <option value="con-recibo-sueldo">CON RECIBO DE SUELDO</option>
     <option value="monotributista">MONOTRIBUTISTA</option>
@@ -198,7 +200,7 @@ import { cn } from "../lib/utils";
     name="grupo-familiar" 
     className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
   >
-    <option value="grupo-familiar">GRUPO FAMILIAR</option>
+    <option value="grupo-familiar">Seleccione Grupo </option>
     <option value="individual">INDIVIDUAL</option>
     <option value="matrimonio">MATRIMONIO</option>
     <option value="matrimonio-1-hijo">MATRIMONIO + 1 HIJO</option>

@@ -14,6 +14,7 @@ import Plan450 from "../../public/assets/plan450.png";
 import Plan250 from "../../public/assets/plan250.png";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
+import { scrollToForm } from "./nuevanav";
 
 export function WobbleCardDemo() {
   return (
@@ -70,35 +71,33 @@ export function WobbleCardDemo() {
         {/* Card Plan MD150 */}
         <a
           className="flex-1"
-          href="https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD150"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <WobbleCard containerClassName="bg-gray-400 h-[420px] lg:w-[320px]">
-            <button className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-              Plan MD150
-            </button>
-            <div className="flex flex-col justify-center items-center h-full">
-              <p className="text-sm text-center">
-                Permite un acceso integral a todos los servicios de nuestra Red
-                de Prestadores, logrando un equilibrio perfecto entre precio y
-                calidad de servicio.
-              </p>
-            </div>
-          </WobbleCard>
+        <WobbleCard containerClassName="bg-gray-400 h-[420px] lg:w-[320px]">
+  <h2 onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
+    Plan MD150
+  </h2>
+  <div className="flex flex-col justify-center items-center h-full">
+    <p className="text-sm text-center">
+      Permite un acceso integral a todos los servicios de nuestra Red de Prestadores, logrando un equilibrio perfecto entre precio y calidad de servicio.
+    </p>
+  </div>
+</WobbleCard>
+
         </a>
 
         {/* Card Plan MD250 */}
         <a
           className="flex-1"
-          href="https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD250"
           target="_blank"
           rel="noopener noreferrer"
         >
           <WobbleCard containerClassName="bg-blue-400 h-[420px] lg:w-[320px]">
-            <button className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-              Plan MD250
-            </button>
+          <h2  onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
+    
+    Plan M250
+  </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Ofrece una combinación equilibrada de costos asequibles y
@@ -112,14 +111,13 @@ export function WobbleCardDemo() {
         {/* Card Plan MD350 */}
         <a
           className="flex-1"
-          href="https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD350"
           target="_blank"
           rel="noopener noreferrer"
         >
           <WobbleCard containerClassName="bg-blue-900 h-[420px] lg:w-[320px]">
-            <button className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-              Plan MD350
-            </button>
+          <h2  onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
+    Plan MD350
+  </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Amplia cartilla con especialistas, sanatorios, clínicas y
@@ -132,14 +130,13 @@ export function WobbleCardDemo() {
         {/* Card Plan MD450 */}
         <a
           className="flex-1"
-          href="https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD450"
           target="_blank"
           rel="noopener noreferrer"
         >
           <WobbleCard containerClassName="bg-gray-900 h-[420px] lg:w-[320px]">
-            <button className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
-              Plan MD450
-            </button>
+          <h2  onClick={scrollToForm} className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200">
+    Plan MD450
+  </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Cartilla médica premium, atención personalizada y la más amplia

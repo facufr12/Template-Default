@@ -17,11 +17,12 @@
     "@tsparticles/slim": "^3.5.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.13",
-    "next": "^14.2.4",
+    "next": "^14.2.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-element-to-jsx-string": "^15.0.0",
     "react-icons": "^5.2.1",
+    "react-router-dom": "^6.24.1",
     "tailwind-merge": "^2.4.0",
     "three": "^0.166.1"
   },
