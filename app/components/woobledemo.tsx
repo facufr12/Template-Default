@@ -84,7 +84,7 @@ export function WobbleCardDemo() {
           >
             <h2
               onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+              className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
             >
               Plan MD150
             </h2>
@@ -94,6 +94,12 @@ export function WobbleCardDemo() {
                 de Prestadores, logrando un equilibrio perfecto entre precio y
                 calidad de servicio.
               </p>
+              <button
+              onClick={scrollToForm}
+              className="px-12 py-4 mt-6 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-200 transition-colors duration-200"
+            >
+              Plan MD150
+            </button>
             </div>
           </WobbleCard>
         </a>
@@ -106,7 +112,7 @@ export function WobbleCardDemo() {
           >
             <h2
               onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+              className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover: transition-colors duration-200"
             >
               Plan M250
             </h2>
@@ -116,6 +122,12 @@ export function WobbleCardDemo() {
                 coberturas, que te permite acceder a una amplia gama de
                 profesionales y servicios médicos ajustados a tu necesidad.
               </p>
+              <button
+              onClick={scrollToForm}
+              className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-400 transition-colors duration-200"
+            >
+              Plan M250
+            </button>
             </div>
           </WobbleCard>
         </a>
@@ -128,7 +140,7 @@ export function WobbleCardDemo() {
           >
             <h2
               onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+              className="px-12 py-4 rounded-full bg-[transparent+] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[transparent] transition-colors duration-200"
             >
               Plan MD350
             </h2>
@@ -137,6 +149,12 @@ export function WobbleCardDemo() {
                 Amplia cartilla con especialistas, sanatorios, clínicas y
                 centros médicos a tu disposición.
               </p>
+              <button
+              onClick={scrollToForm}
+              className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-800  transition-colors duration-200"
+            >
+              Plan M350
+            </button>
             </div>
           </WobbleCard>
         </a>
@@ -149,7 +167,7 @@ export function WobbleCardDemo() {
           >
             <h2
               onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
+              className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
             >
               Plan MD450
             </h2>
@@ -159,6 +177,12 @@ export function WobbleCardDemo() {
                 cobertura prestacional geográfica con los mejores estándares de
                 Calidad.
               </p>
+              <button
+              onClick={scrollToForm}
+              className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-800 transition-colors duration-200"
+            >
+              Plan M250
+            </button>
             </div>
           </WobbleCard>
         </a>

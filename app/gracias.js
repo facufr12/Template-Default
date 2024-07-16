@@ -1,7 +1,7 @@
 // pages/thankyou.js
 import React from 'react';
 import Image from 'next/image';
-import familia4 from "../public/assets/familia4"
+import familia4 from "../public/assets/familia4.jpg"
 const Gracias = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">

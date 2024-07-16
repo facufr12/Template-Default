@@ -3,28 +3,35 @@ import React, { useRef, useState } from "react";
 import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../lib/utils";
-
+import Gracias from "../gracias"
+import { useRouter } from 'next/navigation';
 export function SignupFormDemo() {
+  const ThankYouPage = () => {
+    return <Gracias />;
+  };
   const formRef = useRef(null);
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState(null);
-
+  const router = useRouter(); 
+  
   const onSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-
+    
     try {
       const scriptURL =
         "https://script.google.com/macros/s/AKfycbxI-4huVNr9h3Tb1i4vD2X9n4MYeCc1nEAY-Fdh-wz1iwV1iJfrif0f5yLRxxQg9Vs82g/exec";
       const formData = new FormData(formRef.current);
-
+  
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: formData
+        body: formData,
       });
-
+  
+      console.log("Response received");
       if (response.ok) {
         // Formulario enviado con éxito
+        router.replace(<Gracias/>);
       } else {
         // Error en el envío del formulario
         throw new Error("Ocurrió un error al enviar el formulario.");

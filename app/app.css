@@ -154,8 +154,9 @@ body {
 }
 .marquee-container {
   background-color: #f0f0f0;
-  padding: 30px; /* Espaciado interno */
+  padding: 40px; /* Espaciado interno */
   overflow: hidden; /* Ocultar desbordamiento */
+  
 }
 
 .marquee {
@@ -172,7 +173,7 @@ body {
 
 @keyframes marquee {
   0% {
-    transform: translateX(100%);
+    transform: translateX(0);
   }
   100% {
     transform: translateX(-100%);
@@ -180,13 +181,16 @@ body {
 }
 
 @media (max-width: 768px) {
-  .marquee {
-    animation-duration: 60s; /* Ajustar duración para pantallas más pequeñas */
-  }
-
   .provider-sponsor {
-    width: 80px; /* Ajustar tamaño de imágenes para pantallas más pequeñas */
-    height: 40px;
+    width: 200px;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .provider-sponsor {
+    width: 150px;
+    height: auto;
   }
 }
 .section-footer-legal {
