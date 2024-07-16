@@ -11,7 +11,8 @@
 }
 * {
   
-  font-family: "acumin-variable",sans-serif;
+  font-family: "acumin-variable",'Open Sans', sans-serif !important;
+  font-weight: 400;
   font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
   margin: 0;
   padding: 0;
