@@ -6,8 +6,14 @@ import { SignupFormDemo } from "./components/formdemo";
 import { WobbleCardDemo } from "./components/woobledemo";
 import Marquee from "./components/marquee";
 export default function Home() {
+  const currentYear = new Date().getFullYear();
   return (
     <main>
+          <Head>
+        <meta name="theme-color" content="[#E82E8A" />
+        <title>Tu Título de Página</title>
+        {/* Otros elementos <head> que puedas necesitar */}
+      </Head>
       <section id="header" className="">
         <div className="imgheader">
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
@@ -47,7 +53,9 @@ export default function Home() {
         <Marquee />
       </section>
       <footer>
+        
         <section
+        
           className="elementor-section elementor-top-section elementor-element elementor-element-49b719d3 elementor-section-height-min-height elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
           data-id="49b719d3"
           data-element_type="section"
@@ -59,6 +67,7 @@ export default function Home() {
             backgroundColor: "#1f2531"
           }}
         >
+          
           <div className="elementor-container elementor-column-gap-no">
             <div
               className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d876cc8"
@@ -78,7 +87,7 @@ export default function Home() {
                   }}
                 >
                   <div className="elementor-widget-container">
-                    © MEDICALS 2021 – Todos los derechos reservados – Talcahuano
+                  © MEDICALS {currentYear} – Todos los derechos reservados –
                     750 – pisos 10º y 11º – (011) 4373-9999 –{" "}
                     <a
                       href="mailto:info@medicals.ar"

@@ -82,12 +82,14 @@ export function WobbleCardDemo() {
             NoiseComponent={Noise}
             containerClassName="bg-gray-400 h-[420px] lg:w-[320px]"
           >
-            <h2
-              onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
-            >
-              Plan MD150
-            </h2>
+         <h2
+  onClick={scrollToForm}
+  className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
+  style={{ fontSize: '18px', fontWeight: 'bold' 
+    }} // Aquí ajusta el tamaño del texto según lo necesario
+>
+  Plan MD150
+</h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Permite un acceso integral a todos los servicios de nuestra Red
@@ -110,12 +112,14 @@ export function WobbleCardDemo() {
             NoiseComponent={Noise2}
             containerClassName="bg-blue-400 h-[420px] lg:w-[320px]"
           >
-            <h2
-              onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover: transition-colors duration-200"
-            >
-              Plan M250
-            </h2>
+                 <h2
+  onClick={scrollToForm}
+  className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
+  style={{ fontSize: '18px', fontWeight: 'bold' 
+    }} // Aquí ajusta el tamaño del texto según lo necesario
+>
+  Plan MD250
+</h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Ofrece una combinación equilibrada de costos asequibles y
@@ -138,12 +142,14 @@ export function WobbleCardDemo() {
             NoiseComponent={Noise3}
             containerClassName="bg-blue-900 h-[420px] lg:w-[320px]"
           >
-            <h2
-              onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[transparent+] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[transparent] transition-colors duration-200"
-            >
-              Plan MD350
-            </h2>
+                <h2
+  onClick={scrollToForm}
+  className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
+  style={{ fontSize: '18px', fontWeight: 'bold' 
+    }} // Aquí ajusta el tamaño del texto según lo necesario
+>
+  Plan MD350
+</h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Amplia cartilla con especialistas, sanatorios, clínicas y
@@ -165,12 +171,14 @@ export function WobbleCardDemo() {
             NoiseComponent={Noise4}
             containerClassName="bg-gray-900 h-[420px] lg:w-[320px]"
           >
-            <h2
-              onClick={scrollToForm}
-              className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#E82E8A] transition-colors duration-200"
-            >
-              Plan MD450
-            </h2>
+                <h2
+  onClick={scrollToForm}
+  className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
+  style={{ fontSize: '18px', fontWeight: 'bold' 
+    }} // Aquí ajusta el tamaño del texto según lo necesario
+>
+  Plan MD450
+</h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
                 Cartilla médica premium, atención personalizada y la más amplia
@@ -181,7 +189,7 @@ export function WobbleCardDemo() {
               onClick={scrollToForm}
               className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-800 transition-colors duration-200"
             >
-              Plan M250
+              Plan M450
             </button>
             </div>
           </WobbleCard>

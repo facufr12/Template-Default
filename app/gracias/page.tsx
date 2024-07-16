@@ -5,7 +5,9 @@ import familia4 from '../../public/assets/familia4.jpg';
 
 export default function Gracias() {
   return (
+    
     <section id="header" className="relative h-screen">
+      
       <Navbar />
       <div className="relative h-full">
         {/* Ajustar el contenedor de la imagen */}
@@ -21,7 +23,7 @@ export default function Gracias() {
         </div>
         {/* Contenedor para el texto */}
         <div className="absolute inset-0 flex flex-col items-center justify-center p-10 bg-black bg-opacity-50 text-center text-white">
-          <h1 className="text-6xl font-bold mb-4">¡Gracias por tu envío!</h1>
+          <h1 className="text-5xl font-bold mb-4">¡Gracias por tu envío!</h1>
           <p className="text-2xl mb-6">Hemos recibido tu información correctamente.</p>
         </div>
         {/* Gradient overlay to fade out at the bottom */}

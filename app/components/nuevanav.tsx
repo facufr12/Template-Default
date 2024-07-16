@@ -33,9 +33,10 @@ const Navbar = () => {
       <div className="max-w-screen-lg mx-auto px-4 py-2 md:py-4 flex items-center justify-between relative">
         {/* Logo */}
         <div className="flex-shrink-0">
-          <Image src={Logo} alt="Logo" width={150} height={100} />
-        </div>
-
+  <div className="p-4 sm:p-0">
+    <Image src={Logo} alt="Logo" width={150} height={100} />
+  </div>
+</div>
         {/* Menú principal */}
         <div className="flex-grow text-black text-center md:text-right uppercase">
           <div className="flex justify-center items-center md:hidden absolute right-4 top-0 bottom-0">
