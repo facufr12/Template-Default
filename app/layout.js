@@ -18,6 +18,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
+<meta name="theme-color" content="#E82E8A" />
     <body style={{ fontFamily: "'Acumin Variable Concept ExtraCo', Arial, sans-serif" }}>
       {children}
     </body>

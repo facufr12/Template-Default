@@ -9,11 +9,7 @@ export default function Home() {
   const currentYear = new Date().getFullYear();
   return (
     <main>
-          <Head>
-        <meta name="theme-color" content="[#E82E8A" />
-        <title>Tu Título de Página</title>
-        {/* Otros elementos <head> que puedas necesitar */}
-      </Head>
+       
       <section id="header" className="">
         <div className="imgheader">
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
