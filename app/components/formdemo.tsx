@@ -58,7 +58,7 @@ export function SignupFormDemo() {
         Solicitá Asesor
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Acercanos tus datos y nos pondremos en contacto con vos!.
+        Nos pondremos en contacto a la brevedad
       </p>
 
       <form
@@ -70,7 +70,7 @@ export function SignupFormDemo() {
       >
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
-            <Label htmlFor="name">NOMBRE Y APELLIDO</Label>
+            <Label htmlFor="name">Nombre y Apellido</Label>
             <Input
               type="text"
               id="name"
@@ -80,7 +80,7 @@ export function SignupFormDemo() {
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="phone">WHATSAPP</Label>
+            <Label htmlFor="phone">Whatsapp</Label>
             <Input
               type="tel"
               id="phone"
@@ -91,7 +91,7 @@ export function SignupFormDemo() {
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">EMAIL </Label>
+          <Label htmlFor="email">Email </Label>
 
           <Input
             type="email"
@@ -108,7 +108,7 @@ export function SignupFormDemo() {
               htmlFor="edad-titular"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              LOCALIDAD
+              Localidad
             </Label>
             <Label>
             <select
@@ -156,7 +156,7 @@ export function SignupFormDemo() {
               htmlFor="edad-titular"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              EDAD DEL TITULAR
+              Edad Del Titular
             </Label>
             <select
               id="edad-titular"
@@ -219,7 +219,7 @@ export function SignupFormDemo() {
               htmlFor="tipo-afiliacion"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              TIPO DE AFILIACIÓN
+              Tipo De Afiliación
             </Label>
             <select
               id="tipo-afiliacion"
@@ -237,7 +237,7 @@ export function SignupFormDemo() {
               htmlFor="grupo-familiar"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              GRUPO FAMILIAR
+              Grupo Familiar
             </Label>
             <select
               id="grupo-familiar"
@@ -263,13 +263,13 @@ export function SignupFormDemo() {
             Ocurrió un error al enviar el formulario: {error}
           </div>
         )}
-        <button
-          className={`bg-gradient-to-br from-pink-600 to-pink-400 relative group/btn w-full text-white rounded-md h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
-            submitting ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          type="submit"
-          disabled={submitting}
-        >
+<button
+  className={`px-6 ml-1 py-4 md:py-3 hidden md:block rounded-full bg-[#E82E8A] text-white text-xs font-bold tracking-widest uppercase transform hover:scale-105 hover:bg-gray-700 transition-colors duration-200 relative group/btn w-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
+    submitting ? "opacity-50 cursor-not-allowed" : ""
+  }`}
+  type="submit"
+  disabled={submitting}
+>
           {submitting ? "Enviando..." : "Solicitá un Asesor →"}
           <BottomGradient />
         </button>

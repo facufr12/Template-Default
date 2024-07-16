@@ -72,7 +72,7 @@ body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/assets/familia4.jpg');
     background-size: 180au auto; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
     background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
-    opacity: 0.8; /* Ajusta la opacidad aquí */
+    opacity: 0.9; /* Ajusta la opacidad aquí */
     z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
   }
   #header{
