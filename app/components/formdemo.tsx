@@ -4,8 +4,8 @@ import { Label } from "./label";
 import { Input } from "./input";
 import { cn } from "../lib/utils";
 import Link from "next/link";
-import { useNavigate } from "react-router-dom"
-import { useRouter } from 'next/navigation';
+import { useNavigate } from "react-router-dom";
+import { useRouter } from "next/navigation";
 import Gracias from "../gracias/page";
 export function SignupFormDemo() {
   const formRef = useRef(null);
@@ -16,14 +16,15 @@ export function SignupFormDemo() {
   const onSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
-    
+
     try {
-      const scriptURL = "https://script.google.com/macros/s/AKfycbxI-4huVNr9h3Tb1i4vD2X9n4MYeCc1nEAY-Fdh-wz1iwV1iJfrif0f5yLRxxQg9Vs82g/exec";
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbxI-4huVNr9h3Tb1i4vD2X9n4MYeCc1nEAY-Fdh-wz1iwV1iJfrif0f5yLRxxQg9Vs82g/exec";
       const formData = new FormData(formRef.current);
 
       const response = await fetch(scriptURL, {
         method: "POST",
-        body: formData,
+        body: formData
       });
 
       console.log("Response received");
@@ -33,7 +34,7 @@ export function SignupFormDemo() {
 
         // Redirige a la página de Gracias después de 1 segundo
         setTimeout(() => {
-          router.push('/gracias');
+          router.push("/gracias");
         }, 1000);
       } else {
         // Error en el envío del formulario
@@ -46,8 +47,6 @@ export function SignupFormDemo() {
       setSubmitting(false);
     }
   };
-
-
 
   return (
     <div
@@ -104,19 +103,19 @@ export function SignupFormDemo() {
         </LabelInputContainer>
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer className="mb-4">
-          <Label
+            <Label
               htmlFor="edad-titular"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
               Localidad
             </Label>
             <Label>
-            <select
-      id="localidad"
-      name="localidad"
-      className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
-      style={{ height: '2.5rem' }} // Ajusta la altura según tus necesidades
-    >
+              <select
+                id="localidad"
+                name="localidad"
+                className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+                style={{ height: "2.5rem" }} // Ajusta la altura según tus necesidades
+              >
                 <option value="consulta">Seleccione Localidad</option>
                 <option value="CABA">CABA</option>
                 <option value="Almirante Brown">ALMIRANTE BROWN</option>
@@ -263,13 +262,13 @@ export function SignupFormDemo() {
             Ocurrió un error al enviar el formulario: {error}
           </div>
         )}
-     <button
-  className={`bg-[#E82E8A] from-pink-600 to-pink-400 relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
-    submitting ? "opacity-50 cursor-not-allowed" : ""
-  }`}
-  type="submit"
-  disabled={submitting}
->
+        <button
+          className={`bg-[#E82E8A]  relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
+            submitting ? "opacity-50 cursor-not-allowed" : ""
+          }`}
+          type="submit"
+          disabled={submitting}
+        >
           {submitting ? "Enviando..." : "Solicitá un Asesor →"}
           <BottomGradient />
         </button>
