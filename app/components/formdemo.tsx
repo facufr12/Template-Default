@@ -263,8 +263,8 @@ export function SignupFormDemo() {
             Ocurrió un error al enviar el formulario: {error}
           </div>
         )}
-<button
-  className={`px-6 ml-1 py-4 md:py-3 hidden md:block rounded-full bg-[#E82E8A] text-white text-xs font-bold tracking-widest uppercase transform hover:scale-105 hover:bg-gray-700 transition-colors duration-200 relative group/btn w-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
+     <button
+  className={`bg-[#E82E8A] from-pink-600 to-pink-400 relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
     submitting ? "opacity-50 cursor-not-allowed" : ""
   }`}
   type="submit"
