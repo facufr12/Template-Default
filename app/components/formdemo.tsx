@@ -31,7 +31,7 @@ export function SignupFormDemo() {
       console.log("Response received");
       if (response.ok) {
         // Formulario enviado con éxito
-        router.replace(<Gracias/>);
+        router.replace("/gracias");
       } else {
         // Error en el envío del formulario
         throw new Error("Ocurrió un error al enviar el formulario.");
