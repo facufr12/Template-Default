@@ -84,7 +84,7 @@ export default function Home() {
                 >
                   <div className="elementor-widget-container">
                   © MEDICALS {currentYear} – Todos los derechos reservados –
-                    750 – pisos 10º y 11º – (011) 4373-9999 –{" "}
+                    Talcahuano 750 – pisos 10º y 11º – (011) 4373-9999 –{" "}
                     <a
                       href="mailto:info@medicals.ar"
                       style={{ color: "#e82e8a" }}

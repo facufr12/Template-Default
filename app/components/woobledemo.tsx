@@ -97,11 +97,12 @@ export function WobbleCardDemo() {
                 calidad de servicio.
               </p>
               <button
-              onClick={scrollToForm}
-              className="px-12 py-4 mt-6 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-200 transition-colors duration-200"
-            >
-              Plan MD150
-            </button>
+  onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD150'}
+  className="px-12 py-4 mt-6 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-200 transition-colors duration-200"
+>
+  Ver Mas
+</button>
+
             </div>
           </WobbleCard>
         </a>
@@ -127,10 +128,11 @@ export function WobbleCardDemo() {
                 profesionales y servicios médicos ajustados a tu necesidad.
               </p>
               <button
-              onClick={scrollToForm}
+  onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD250'}
+
               className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-400 transition-colors duration-200"
             >
-              Plan M250
+            Ver Mas
             </button>
             </div>
           </WobbleCard>
@@ -156,10 +158,11 @@ export function WobbleCardDemo() {
                 centros médicos a tu disposición.
               </p>
               <button
-              onClick={scrollToForm}
+              
+  onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD350'}
               className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-800  transition-colors duration-200"
             >
-              Plan M350
+             Ver Mas
             </button>
             </div>
           </WobbleCard>
@@ -186,10 +189,10 @@ export function WobbleCardDemo() {
                 Calidad.
               </p>
               <button
-              onClick={scrollToForm}
+  onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD450'}
               className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-800 transition-colors duration-200"
             >
-              Plan M450
+               Ver Mas
             </button>
             </div>
           </WobbleCard>

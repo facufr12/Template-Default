@@ -40,18 +40,15 @@ const Navbar = () => {
         {/* Menú principal */}
         <div className="flex-grow text-black text-center md:text-right uppercase">
           <div className="flex justify-center items-center md:hidden absolute right-4 top-0 bottom-0">
-            <button
-              onClick={toggleMenu}
-              className="text-gray-900 focus:outline-none text-2xl md:text-base"
-            >
-              {isOpenMenu ? <FaTimes /> : <FaBars />}
-            </button>
-          </div>
-          <ul
-  className={`md:flex mt-2 mr-10 justify-center md:justify-end space-x-4 md:space-x-8 font-medium ${
-    isOpenMenu ? "block" : "hidden"
-  }`}
+          <button
+  onClick={toggleMenu}
+  className="text-gray-900 focus:outline-none text-2xl md:text-base hidden md:block"
 >
+  {isOpenMenu ? <FaTimes /> : <FaBars />}
+</button>
+
+          </div>
+          <ul className="hidden">
   <NavItem href="#" onClick={closeMenu}>
     Sucursales
   </NavItem>
@@ -63,7 +60,8 @@ const Navbar = () => {
   </NavItem>
 </ul>
 
-        </div>
+
+        </div> Ver Mas
 
         <button
           onClick={scrollToForm}
