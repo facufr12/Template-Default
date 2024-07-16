@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import Gracias from "./gracias"
 import "./app.css";
 import Navbar from "./components/nuevanav";
 import { SignupFormDemo } from "./components/formdemo";

@@ -28,7 +28,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-, "app/components"  ],
+, "app/components", "app/gracias/gracias.jsx", "app/gracias/gracias/index.tsx"  ],
   "exclude": [
     "node_modules"
   ]
