@@ -1266,7 +1266,7 @@ video {
 }
 @font-face {
   font-family: acumin-variable;
-  src: url(/dist/_next/static/media/AcuminVariableConcept-WideExtraLight.70ed241d.ttf)
+  src: url(/Medicals-Template-Facundo/dist/_next/static/media/AcuminVariableConcept-WideExtraLight.70ed241d.ttf)
     format("truetype");
 }
 :root {
@@ -1283,7 +1283,7 @@ video {
   box-sizing: border-box;
 }
 body {
-  background-image: url(/dist/assets/familia4.jpg);
+  background-image: url(/Medicals-Template-Facundo/dist/assets/familia4.jpg);
 }
 @media (prefers-color-scheme: dark) {
   :root {

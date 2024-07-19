@@ -8,7 +8,7 @@
         Promise.resolve().then(t.t.bind(t, 9275, 23)),
         Promise.resolve().then(t.t.bind(t, 5324, 23)),
         Promise.resolve().then(t.t.bind(t, 1343, 23));
-    }
+    },
   },
   function (e) {
     var n = function (n) {
@@ -18,5 +18,5 @@
       return n(1028), n(8522);
     }),
       (_N_E = e.O());
-  }
+  },
 ]);
