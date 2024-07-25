@@ -83,7 +83,7 @@ export function WobbleCardDemo() {
               </p>
               <button
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD150'}
-  className="px-12 py-4 mt-6 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-200 transition-colors duration-200"
+  className="px-12 py-4 mt-6 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-200 transition-colors duration-200"
 >
   Ver Mas
 </button>
@@ -113,7 +113,7 @@ export function WobbleCardDemo() {
               <button
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD250'}
 
-              className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-400 transition-colors duration-200"
+              className=" mt-6 px-12 py-4 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-400 transition-colors duration-200"
             >
             Ver Mas
             </button>
@@ -142,7 +142,7 @@ export function WobbleCardDemo() {
               <button
               
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD350'}
-              className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-800  transition-colors duration-200"
+              className=" mt-6 px-12 py-4 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-800  transition-colors duration-200"
             >
              Ver Mas
             </button>
@@ -170,7 +170,7 @@ export function WobbleCardDemo() {
               </p>
               <button
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD450'}
-              className=" mt-6 px-12 py-4 rounded-full bg-[#E82E8A] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-800 transition-colors duration-200"
+              className=" mt-6 px-12 py-4 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-800 transition-colors duration-200"
             >
                Ver Mas
             </button>

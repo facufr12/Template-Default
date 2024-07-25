@@ -30,7 +30,7 @@ export default function Home() {
                 </h2>
               </div>
             </div>
-            <div className="mt-14 flex items-center justify-center">
+            <div className="mt-0 flex items-center justify-center">
               <SignupFormDemo className="w-full" />
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function Home() {
       {/* Sección de Planes */}
 
       {/* Sección de Demo de WobbleCard */}
-      <section id="planesmostrar">
+      <section id="planes">
         <div className="max-w-screen-xl mx-auto py-8">
           <WobbleCardDemo />
         </div>
@@ -48,17 +48,17 @@ export default function Home() {
 
       {/* Sección de Infinite Moving Cards */}
 
-      <section className="marqueee">
+      <section className="marqueee" id="marqueeee">
         <Marquee />
       </section>
-      <section>
+      <section id="">
       <div className="flex">
             {/* Columna izquierda (imagen) */}
             <div className="w-1/2">
                 <img src="./logof.jpg" alt="Imagen" className="h-full w-full object-cover" />
             </div>
             {/* Columna derecha (texto centrado) */}
-            <div className="w-1/2 flex items-center bg-gray-200 justify-center">
+            <div className="w-1/2 flex items-center bg-transparent justify-center">
                 <div className="text-center">
                     <h2 className="text-3xl text-black font-bold mb-4">Title Plan</h2>
                     <p className="text-lg text-black">Description Plan.</p>
@@ -70,6 +70,9 @@ export default function Home() {
 
       </section>
    <AppleCardsCarouselDemo />
+
+   <ExpandableCardDemo />
+   
       <footer>
         <section
           className="elementor-section elementor-top-section elementor-element elementor-element-49b719d3 elementor-section-height-min-height elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-items-middle"

@@ -1,25 +1,28 @@
 
 
 
-
-
+/* styles/styles.css */
 body {
-  /* Establece la imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  
+  background-image: url('../public/macbook.jpg'); /* Ruta a tu imagen de fondo */
+  background-attachment: fixed; /* Fondo fijo */
+  background-size: cover; /* Ajuste para cubrir toda la pantalla */
   font-family: "acumin-variable",'Open Sans', sans-serif !important;
   font-weight: 400;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 100vh;
-  font-weight: 400;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-size: medium; */
-  /* color: gray; */
 }
+
+/* Estilo para secciones específicas */
+#header {
+  position: relative;
+  min-height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+/* Más estilos para otras secciones si es necesario */
+
 * {
   font-weight: 400;
   margin: 0;
@@ -31,13 +34,6 @@ body {
   /* font-size: medium; */
   /* color: gray; */
 }
-/* Estilos específicos para diferentes secciones */
- #nuestrosplanes, #planes, #sucursales, #planesmostrar, #footer {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
 
 
 #header {
@@ -46,19 +42,7 @@ body {
 }
 
 
-.imgheader::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/logof.jpg');
-  background-size: cover;
-  background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
-  opacity: 0.7; /* Ajusta la opacidad aquí */
-  z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
-}
+
 
 @media (max-width: 768px) {
   .imgheader::before {
@@ -69,7 +53,7 @@ body {
     width: 180%; /* Aumenta el ancho del fondo para cubrir el espacio extra de la derecha */
     height: 100%;
     background-size: 180% auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/logof.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/fondomontaña.avif');
     background-size: 180au auto; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
     background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
     opacity: 0.9; /* Ajusta la opacidad aquí */
@@ -155,7 +139,7 @@ body {
   }
 }
 .marquee-container {
-  background-color: #f0f0f0;
+  background-color: transparent;
   padding: 40px; /* Espaciado interno */
   overflow: hidden; /* Ocultar desbordamiento */
   

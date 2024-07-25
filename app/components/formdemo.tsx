@@ -113,7 +113,7 @@ export function SignupFormDemo() {
               <select
                 id="localidad"
                 name="localidad"
-                className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+                className="block appearance-none w-full bg-white border border-blue-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                 style={{ height: "2.5rem" }} // Ajusta la altura según tus necesidades
               >
                 <option value="consulta">Seleccione Localidad</option>
@@ -160,7 +160,7 @@ export function SignupFormDemo() {
             <select
               id="edad-titular"
               name="edad-titular"
-              className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+              className="block appearance-none w-full bg-white border border-blue-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
             >
               <option value="edad-titular">Seleccione Edad</option>
               <option value="18 años">18 años</option>
@@ -223,7 +223,7 @@ export function SignupFormDemo() {
             <select
               id="tipo-afiliacion"
               name="tipo-afiliacion"
-              className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+              className="block appearance-none w-full bg-white border border-blue-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-pink-500"
             >
               <option value="tipo-afiliacion">Seleccione Afiliación</option>
               <option value="particular-autonomo">PARTICULAR / AUTÓNOMO</option>
@@ -241,7 +241,7 @@ export function SignupFormDemo() {
             <select
               id="grupo-familiar"
               name="grupo-familiar"
-              className="block appearance-none w-full bg-white border border-gray-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-pink-500 focus:border-pink-500"
+              className="block appearance-none w-full bg-white border border-blue-300 text-gray-700 py-2 px-3 pr-8 rounded leading-tight focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-pink-500"
             >
               <option value="grupo-familiar">Seleccione Grupo </option>
               <option value="individual">INDIVIDUAL</option>
@@ -263,7 +263,7 @@ export function SignupFormDemo() {
           </div>
         )}
         <button
-          className={`bg-[#000000]  relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
+          className={`bg-[#075757]  relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
             submitting ? "opacity-50 cursor-not-allowed" : ""
           }`}
           type="submit"

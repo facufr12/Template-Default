@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     images: {
-      domains: ['medicals.ar'],
+        domains: ['assets.aceternity.com', 'medicals.ar'],
+
     },
   };
 /* module.exports = nextConfig*/
