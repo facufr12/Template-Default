@@ -5,14 +5,6 @@ import { WobbleCard } from "./wobble-card";
 import { FaCheck } from "react-icons/fa";
 import { BsArrowRightSquareFill } from "react-icons/bs";
 import { BsTelephoneInboundFill } from "react-icons/bs";
-import Plan350 from "../../public/assets/plan.png";
-import Plan150 from "../../public/assets/plan150.png";
-import Familia1 from "../../public/assets/familia.jpg";
-import Familia2 from "../../public/assets/familia2.jpg";
-import Familia3 from "../../public/assets/familia3.jpg";
-import Familia4 from "../../public/assets/familia4.jpg";
-import Plan450 from "../../public/assets/plan450.png";
-import Plan250 from "../../public/assets/plan250.png";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { scrollToForm } from "./nuevanav";
@@ -28,32 +20,29 @@ export function WobbleCardDemo() {
       >
         <div className="max-w-xs mx-auto lg:max-w-full">
           <h2 className="text-left text-balance text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-            Medical’s Medicina Prepaga
+            Nombre prepaga
           </h2>
           <div className="mt-4 text-left text-sm lg:text-base text-neutral-200 space-y-2">
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Planes de Salud 100% accesibles.
+              <FaCheck className="mr-2" /> Personalizar.
             </div>
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Profesionales de primer nivel.
+              <FaCheck className="mr-2" /> Personalizar.
             </div>
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Centros médicos de avanzada.
+              <FaCheck className="mr-2" /> Personalizar.
             </div>
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Médicos a domicilio las 24 hs. los
-              365 días del año.
+              <FaCheck className="mr-2" /> Personalizar.
             </div>
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Descuentos en medicamentos.
+              <FaCheck className="mr-2" />Personalizar.
             </div>
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Recupero de aportes de Obra Social
-              para empleados.
+              <FaCheck className="mr-2" /> Personalizar.
             </div>
             <div className="flex items-center">
-              <FaCheck className="mr-2" /> Atención en los más modernos
-              sanatorios y clínicas C.A.B.A. y G.B.A.
+              <FaCheck className="mr-2" /> Personalizar.
             </div>
           </div>
         </div>
@@ -65,12 +54,10 @@ export function WobbleCardDemo() {
         containerClassName="col-span-12 lg:col-span-6"
       >
         <h2 className="text-left text-balance text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-          Medical’s es una empresa de salud fundada hace más de 35 años por
-          profesionales de la medicina.
+        Etiqueta  h2
         </h2>
         <p className="mt-4 text-left text-sm lg:text-base text-neutral-200">
-          Esto nos ha permitido tener un perfil médico antes que comercial
-          dándole fuerza y sustento a nuestra filosofía «MEDICINA PARA TODOS».
+          Etiqueta P.
         </p>
       </WobbleCard>
 
@@ -88,13 +75,11 @@ export function WobbleCardDemo() {
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
 >
-  Plan MD150
+  Plan 
 </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
-                Permite un acceso integral a todos los servicios de nuestra Red
-                de Prestadores, logrando un equilibrio perfecto entre precio y
-                calidad de servicio.
+              Plan Description.
               </p>
               <button
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD150'}
@@ -119,13 +104,11 @@ export function WobbleCardDemo() {
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
 >
-  Plan MD250
+  Plan 
 </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
-                Ofrece una combinación equilibrada de costos asequibles y
-                coberturas, que te permite acceder a una amplia gama de
-                profesionales y servicios médicos ajustados a tu necesidad.
+              Plan Description.
               </p>
               <button
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD250'}
@@ -150,12 +133,11 @@ export function WobbleCardDemo() {
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
 >
-  Plan MD350
+  Plan 
 </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
-                Amplia cartilla con especialistas, sanatorios, clínicas y
-                centros médicos a tu disposición.
+              Plan Description.
               </p>
               <button
               
@@ -180,13 +162,11 @@ export function WobbleCardDemo() {
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
 >
-  Plan MD450
+  Plan 
 </h2>
             <div className="flex flex-col justify-center items-center h-full">
               <p className="text-sm text-center">
-                Cartilla médica premium, atención personalizada y la más amplia
-                cobertura prestacional geográfica con los mejores estándares de
-                Calidad.
+              Plan Description.
               </p>
               <button
   onClick={() => window.location.href = 'https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD450'}

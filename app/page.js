@@ -1,19 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
+import Navbar2 from "./components/navbar2";
 import "./app.css";
+import Navbartailwind from "./components/navtailwind"
 import Navbar from "./components/nuevanav";
 import { SignupFormDemo } from "./components/formdemo";
 import { WobbleCardDemo } from "./components/woobledemo";
 import Marquee from "./components/marquee";
+import {ExpandableCardDemo} from "./components/expandablecard"
+import {AppleCardsCarouselDemo} from "./components/appledemo"
 export default function Home() {
   const currentYear = new Date().getFullYear();
   return (
     <main>
-       
       <section id="header" className="">
         <div className="imgheader">
+         <Navbartailwind />
           <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-            <Navbar />
             <div className="flex items-center justify-center">
               <div className="flex flex-col items-start mx-auto space-y-4">
                 <h1 className="text-4xl md:text-7xl font-bold text-white-900 hidden md:block">
@@ -48,10 +51,27 @@ export default function Home() {
       <section className="marqueee">
         <Marquee />
       </section>
+      <section>
+      <div className="flex">
+            {/* Columna izquierda (imagen) */}
+            <div className="w-1/2">
+                <img src="./logof.jpg" alt="Imagen" className="h-full w-full object-cover" />
+            </div>
+            {/* Columna derecha (texto centrado) */}
+            <div className="w-1/2 flex items-center bg-gray-200 justify-center">
+                <div className="text-center">
+                    <h2 className="text-3xl text-black font-bold mb-4">Title Plan</h2>
+                    <p className="text-lg text-black">Description Plan.</p>
+                    <span className="text-lg text-black" >Plan Comment</span>
+                </div>
+            </div>
+        </div>
+
+
+      </section>
+   <AppleCardsCarouselDemo />
       <footer>
-        
         <section
-        
           className="elementor-section elementor-top-section elementor-element elementor-element-49b719d3 elementor-section-height-min-height elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
           data-id="49b719d3"
           data-element_type="section"
@@ -60,10 +80,9 @@ export default function Home() {
             padding: "40px",
             width: "100%",
             left: "0px",
-            backgroundColor: "#1f2531"
+            backgroundColor: "#1f2531",
           }}
         >
-          
           <div className="elementor-container elementor-column-gap-no">
             <div
               className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-d876cc8"
@@ -79,17 +98,17 @@ export default function Home() {
                   style={{
                     textAlign: "center",
                     fontSize: "12px",
-                    width: "100%"
+                    width: "100%",
                   }}
                 >
                   <div className="elementor-widget-container">
-                  © MEDICALS {currentYear} – Todos los derechos reservados –
-                    Talcahuano 750 – pisos 10º y 11º – (011) 4373-9999 –{" "}
+                    © Prepaga {currentYear} – Todos los derechos reservados –
+                    calle 111 – pisos x y x – (011) 5555-444x –{" "}
                     <a
                       href="mailto:info@medicals.ar"
                       style={{ color: "#e82e8a" }}
                     >
-                      info@medicals.ar
+                      email@medicals.ar
                     </a>
                   </div>
                 </div>
@@ -102,27 +121,19 @@ export default function Home() {
                     textAlign: "center",
                     fontSize: "10px",
                     width: "100%",
-                    padding: "10px"
+                    padding: "10px",
                   }}
                 >
                   <div className="elementor-widget-container">
                     <p>
-                      Las prestaciones incorporadas en el marco de las leyes No
-                      24.754 y 26682 y la Resoluciones 201/02 y 1991/05 M:S
-                      :deberán ser gestionadas ante MEDICAL’S S.A., quien
-                      indicará los prestadores para cada caso, hay prestaciones
-                      obligatorias de cobertura medico asistencial, informese de
-                      los términos y alcances del Programa Médico Obligatorio,
-                      en www.buenosaires.gov.ar (Ley 2792 CABA) y Ley 13987
-                      orientación al consumidor Bs As 0800-222-9042 y el órgano
-                      de control SSS 0800-222-72583 –{" "}
+                     Texto Footer
                       <a
                         style={{ color: "#e82e8a" }}
                         href="https://www.argentina.gob.ar/sssalud"
                         target="_blank"
                         rel="noopener"
                       >
-                        https://www.argentina.gob.ar/sssalud
+                        htts://paginaweb.com.ar
                       </a>
                     </p>
                   </div>

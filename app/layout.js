@@ -2,11 +2,11 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
-  title: "Medicals",
+  title: "Nombre Prepaga",
   description: "Generado por Facu.f",
 
   icons: {
-    icon: ["/favicon.png"]
+    icon: ["/nombrefavion.png"]
   }
 };
 

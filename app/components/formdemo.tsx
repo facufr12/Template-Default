@@ -263,7 +263,7 @@ export function SignupFormDemo() {
           </div>
         )}
         <button
-          className={`bg-[#E82E8A]  relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
+          className={`bg-[#000000]  relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
             submitting ? "opacity-50 cursor-not-allowed" : ""
           }`}
           type="submit"

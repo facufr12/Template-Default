@@ -1,21 +1,11 @@
-"use client";
+"use client"
 import Link from "next/link";
-import React, { useState } from "react";
-import Image from "next/image";
-import Logo from "../../public/assets/logomedicals.png";
+import React from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import "../app.css";
-import { SignupFormDemo } from "./formdemo";
-export const scrollToForm  = () => {
-  const formElement = document.getElementById("formid");
-  if (formElement) {
-    formElement.scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-};
+import { scrollToForm } from "./formdemo";
+
 const Navbar = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-
-
+  const [isOpenMenu, setIsOpenMenu] = React.useState(false);
 
   const toggleMenu = () => {
     setIsOpenMenu(!isOpenMenu);
@@ -26,62 +16,54 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="w-full  bg-white shadow-lg fixed top-0 z-50">
+    <nav className="bg-white shadow-lg fixed top-0 w-full z-50">
       {/* Línea rosa encima del nav */}
-      <div className="bg-[#E82E8A] h-3 w-full"></div> {/* Línea de color #E82E8A */}
+      <div className="bg-[#000000] h-3 w-full"></div> {/* Línea de color #000000 */}
 
       <div className="max-w-screen-lg mx-auto px-4 py-2 md:py-4 flex items-center justify-between relative">
         {/* Logo */}
-        <div className="flex-shrink-0">
-  <div className="p-4 sm:p-0">
-    <Image src={Logo} alt="Logo" width={150} height={100} />
-  </div>
-</div>
-        {/* Menú principal */}
-        <div className="flex-grow text-black text-center md:text-right uppercase">
-          <div className="flex justify-center items-center md:hidden absolute right-4 top-0 bottom-0">
-          <button
-  onClick={toggleMenu}
-  className="text-gray-900 focus:outline-none text-2xl md:text-base hidden md:block"
->
-  {isOpenMenu ? <FaTimes /> : <FaBars />}
-</button>
+        <Link href="/">
+          <a className="flex-shrink-0">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/5968/5968204.png"
+              alt="Logo"
+              className="w-16 cursor-pointer"
+            />
+          </a>
+        </Link>
 
-          </div>
-          <ul className="hidden">
-  <NavItem href="#" onClick={closeMenu}>
-    Sucursales
-  </NavItem>
-  <NavItem href="#" onClick={closeMenu}>
-    Quienes Somos
-  </NavItem>
-  <NavItem href="#" onClick={closeMenu}>
-    Cartilla
-  </NavItem>
-</ul>
+        {/* Botón para el menú responsivo */}
+        <div className="md:hidden">
+          <button className="text-3xl text-black p-1" onClick={toggleMenu}>
+            {isOpenMenu ? <FaTimes /> : <FaBars />}
+          </button>
+        </div>
 
+        {/* Enlaces del menú */}
+        <div className={`md:flex flex-grow ${isOpenMenu ? "block" : "hidden"} md:block mt-2 md:mt-0 md:w-auto md:flex-grow md:flex-row md:items-center md:space-x-6`}>
+          <NavItem href="/proyectos" onClick={closeMenu}>Item1</NavItem>
+          <NavItem href="#" onClick={closeMenu}>Item2</NavItem>
+          <NavItem href="#" onClick={closeMenu}>Item3</NavItem>
+        </div>
 
-        </div> Ver Mas
-
-        <button
-          onClick={scrollToForm}
-          className="px-6 ml-1 py-4 md:py-3 hidden md:block rounded-full bg-[#E82E8A] text-white text-xs font-bold tracking-widest uppercase transform hover:scale-105 hover:bg-gray-700 transition-colors duration-200"
-        >
-          Solicitá Asesor
-        </button>
+        {/* Botón de sign in */}
+        <div className="flex items-center gap-6">
+          <button className="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]" onClick={scrollToForm}>
+            Sign in
+          </button>
+        </div>
       </div>
     </nav>
   );
 };
-
 const NavItem = ({ href, children, onClick }) => {
   return (
-    <li className="relative">
-      <Link href={href} legacyBehavior>
-        <a onClick={onClick}>{children}</a>
-      </Link>
-    </li>
+    <Link href={href} legacyBehavior>
+      <href className="text-black hover:text-gray-300" onClick={onClick}>
+        {children}
+      </href>
+    </Link>
   );
 };
 
-export default Navbar;
+export default NavItem;
