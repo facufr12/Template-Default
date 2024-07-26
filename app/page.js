@@ -3,7 +3,7 @@ import Link from "next/link";
 import Navbar2 from "./components/navbar2";
 import "./app.css";
 import Navbartailwind from "./components/navtailwind"
-import Navbar from "./components/nuevanav";
+
 import { SignupFormDemo } from "./components/formdemo";
 import { WobbleCardDemo } from "./components/woobledemo";
 import Marquee from "./components/marquee";

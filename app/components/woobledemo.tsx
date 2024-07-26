@@ -7,7 +7,7 @@ import { BsArrowRightSquareFill } from "react-icons/bs";
 import { BsTelephoneInboundFill } from "react-icons/bs";
 import { BsPatchCheckFill } from "react-icons/bs";
 import { IoLogoWhatsapp } from "react-icons/io";
-import { scrollToForm } from "./nuevanav";
+
 
 import { Noise, Noise2, Noise3, Noise4, Noise5 } from "./Noisecomponents";
 export function WobbleCardDemo() {
@@ -70,7 +70,7 @@ export function WobbleCardDemo() {
             containerClassName="bg-gray-400 h-[420px] lg:w-[320px]"
           >
          <h2
-  onClick={scrollToForm}
+
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -99,7 +99,7 @@ export function WobbleCardDemo() {
             containerClassName="bg-blue-400 h-[420px] lg:w-[320px]"
           >
                  <h2
-  onClick={scrollToForm}
+  
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -128,7 +128,7 @@ export function WobbleCardDemo() {
             containerClassName="bg-blue-900 h-[420px] lg:w-[320px]"
           >
                 <h2
-  onClick={scrollToForm}
+  
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -157,7 +157,7 @@ export function WobbleCardDemo() {
             containerClassName="bg-gray-900 h-[420px] lg:w-[320px]"
           >
                 <h2
-  onClick={scrollToForm}
+
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
