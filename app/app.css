@@ -49,12 +49,12 @@ body {
     content: "";
     position:fixed;
     top: 0%; /* Mueve la imagen hacia arriba un 1% del contenedor */
-    right: -20%; /* Mueve la imagen hacia la derecha un 40% del contenedor */
+    right: -40%; /* Mueve la imagen hacia la derecha un 40% del contenedor */
     width: 180%; /* Aumenta el ancho del fondo para cubrir el espacio extra de la derecha */
     height: 100%;
     background-size: 180% auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/fondomontaña.avif');
-    background-size: 180au auto; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/macbook.jpg');
+    background-size: 150% 100%; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
     background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
     opacity: 0.9; /* Ajusta la opacidad aquí */
     z-index: -1; /* Envía el pseudo-elemento detrás del contenido */

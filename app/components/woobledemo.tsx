@@ -54,10 +54,10 @@ export function WobbleCardDemo() {
         containerClassName="col-span-12 lg:col-span-6"
       >
         <h2 className="text-left text-balance text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Etiqueta  h2
+        Title
         </h2>
         <p className="mt-4 text-left text-sm lg:text-base text-neutral-200">
-          Etiqueta P.
+          Description
         </p>
       </WobbleCard>
 

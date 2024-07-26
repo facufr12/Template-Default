@@ -2,40 +2,43 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar2 from "./components/navbar2";
 import "./app.css";
-import Navbartailwind from "./components/navtailwind"
+import Navbartailwind from "./components/navtailwind";
 
 import { SignupFormDemo } from "./components/formdemo";
 import { WobbleCardDemo } from "./components/woobledemo";
 import Marquee from "./components/marquee";
-import {ExpandableCardDemo} from "./components/expandablecard"
-import {AppleCardsCarouselDemo} from "./components/appledemo"
+import { ExpandableCardDemo } from "./components/expandablecard";
+import { AppleCardsCarouselDemo } from "./components/appledemo";
 export default function Home() {
   const currentYear = new Date().getFullYear();
   return (
     <main>
-      <section id="header" className="">
-        <div className="imgheader">
-         <Navbartailwind />
-          <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
-            <div className="flex items-center justify-center">
-              <div className="flex flex-col items-start mx-auto space-y-4">
-                <h1 className="text-4xl md:text-7xl font-bold text-white-900 hidden md:block">
-                  Medicina Prepaga
-                </h1>
-                <h2 className="text-2xl md:text-5xl font-bold text-white-600 hidden md:block">
-                  Cotizá tu Plan
-                </h2>
-                <h2 className="text-2xl md:text-4xl font-bold text-white-600 hidden md:block">
-                  Hasta 50% de Ahorro
-                </h2>
-              </div>
-            </div>
-            <div className="mt-0 flex items-center justify-center">
-              <SignupFormDemo className="w-full" />
-            </div>
-          </div>
+<section id="header" className="relative">
+  <div className="imgheader">
+    <Navbartailwind />
+    <div className="grid grid-cols-1 md:grid-cols-2 min-h-screen">
+      {/* Contenedor para el texto */}
+      <div className="flex items-center justify-center relative">
+        <div className="flex flex-col items-start mx-auto space-y-4 relative top-[-10%] md:top-[-15%]">
+          <h1 className="text-4xl md:text-7xl font-bold text-white-900 hidden md:block">
+            Apple
+          </h1>
+          <h2 className="text-2xl md:text-5xl font-bold text-white-900 hidden md:block">
+            Macbook
+          </h2>
+          <h2 className="text-2xl md:text-4xl font-bold text-white-900   hidden md:block">
+            Iphone 50%
+          </h2>
         </div>
-      </section>
+      </div>
+      {/* Contenedor para el formulario */}
+      <div className="flex items-center justify-center">
+        <SignupFormDemo className="w-full" />
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Sección de Planes */}
 
@@ -52,27 +55,29 @@ export default function Home() {
         <Marquee />
       </section>
       <section id="">
-      <div className="flex">
-            {/* Columna izquierda (imagen) */}
-            <div className="w-1/2">
-                <img src="./logof.jpg" alt="Imagen" className="h-full w-full object-cover" />
+        <div className="flex">
+          {/* Columna izquierda (imagen) */}
+          <div className="w-1/2">
+            <img
+              src="./fondomontaña.avif"
+              alt="Imagen"
+              className="h-200 w-200 object-cover"
+            />
+          </div>
+          {/* Columna derecha (texto centrado) */}
+          <div className="w-1/2 flex items-center bg-transparent justify-center">
+            <div className="text-center">
+              <h2 className="text-5xl text-white font-bold mb-4">Title </h2>
+              <p className="text-xl text-white">Description Plan.</p>
+              <span className="text-xl text-white">Plan Comment</span>
             </div>
-            {/* Columna derecha (texto centrado) */}
-            <div className="w-1/2 flex items-center bg-transparent justify-center">
-                <div className="text-center">
-                    <h2 className="text-3xl text-black font-bold mb-4">Title Plan</h2>
-                    <p className="text-lg text-black">Description Plan.</p>
-                    <span className="text-lg text-black" >Plan Comment</span>
-                </div>
-            </div>
+          </div>
         </div>
-
-
       </section>
-   <AppleCardsCarouselDemo />
+      <AppleCardsCarouselDemo />
 
-   <ExpandableCardDemo />
-   
+      <ExpandableCardDemo />
+
       <footer>
         <section
           className="elementor-section elementor-top-section elementor-element elementor-element-49b719d3 elementor-section-height-min-height elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-items-middle"
@@ -129,7 +134,7 @@ export default function Home() {
                 >
                   <div className="elementor-widget-container">
                     <p>
-                     Texto Footer
+                      Texto Footer
                       <a
                         style={{ color: "#e82e8a" }}
                         href="https://www.argentina.gob.ar/sssalud"
