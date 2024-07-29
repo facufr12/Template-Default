@@ -10,7 +10,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 
 import { Noise, Noise2, Noise3, Noise4, Noise5 } from "./Noisecomponents";
-export function WobbleCardDemo() {
+export default function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-12 gap-4 mt-4 max-w-7xl mx-auto">
       {/* Card 1 */}
@@ -70,11 +70,8 @@ export function WobbleCardDemo() {
             containerClassName="bg-gray-400 h-[420px] lg:w-[320px]"
           >
          <h2
-<<<<<<< HEAD
  
-=======
 
->>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -103,11 +100,8 @@ export function WobbleCardDemo() {
             containerClassName="bg-blue-400 h-[420px] lg:w-[320px]"
           >
                  <h2
-<<<<<<< HEAD
 
-=======
   
->>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -136,11 +130,8 @@ export function WobbleCardDemo() {
             containerClassName="bg-blue-900 h-[420px] lg:w-[320px]"
           >
                 <h2
-<<<<<<< HEAD
 
-=======
   
->>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -169,11 +160,6 @@ export function WobbleCardDemo() {
             containerClassName="bg-gray-900 h-[420px] lg:w-[320px]"
           >
                 <h2
-<<<<<<< HEAD
- 
-=======
-
->>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario

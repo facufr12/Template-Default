@@ -13,7 +13,6 @@ export default function Gracias() {
         <div className="absolute inset-0 z-0 top-20">
           <Image
             src={macbook}
-            src={fondomontaña}
             alt="Gracias"
             layout="fill"
             objectFit="cover"

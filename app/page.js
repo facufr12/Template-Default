@@ -58,7 +58,7 @@ export default function Home() {
         <div className="flex">
           {/* Columna izquierda (imagen) */}
           <div className="w-1/2">
-            <img
+            <Image
               src="./fondomontaña.avif"
               alt="Imagen"
               className="h-200 w-200 object-cover"
