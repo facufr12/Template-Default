@@ -1,5 +1,4 @@
 import React from "react";
-import macbook from "../../public/macbook.jpg";
 import Navbartailwind from "../components/navtailwind"
 import Image from "next/image";
 
@@ -11,7 +10,7 @@ export default function Gracias() {
         {/* Ajustar el contenedor de la imagen */}
         <div className="absolute inset-0 z-0 top-20">
           <Image
-            src={macbook}
+            src={""}
             alt="Gracias"
             layout="fill"
             objectFit="cover"

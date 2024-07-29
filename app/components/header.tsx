@@ -30,7 +30,7 @@ const Header = () => {
           </div>
           {/* Contenedor para el formulario */}
           <div className="flex items-center justify-center">
-            <SignupFormDemo className="w-full" />
+            <SignupFormDemo />
           </div>
         </div>
       </div>
