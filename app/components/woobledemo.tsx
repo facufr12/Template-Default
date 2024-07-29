@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import React from "react";
 import { WobbleCard } from "./wobble-card";
@@ -10,7 +10,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 
 
 import { Noise, Noise2, Noise3, Noise4, Noise5 } from "./Noisecomponents";
-export default function WobbleCardDemo() {
+export function WobbleCardDemo() {
   return (
     <div className="grid grid-cols-12 gap-4 mt-4 max-w-7xl mx-auto">
       {/* Card 1 */}
