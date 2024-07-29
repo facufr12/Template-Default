@@ -263,12 +263,10 @@ export function SignupFormDemo() {
           </div>
         )}
         <button
-          className={`bg-[#075757]  relative group/btn w-full text-white rounded-full h-10 font-medium shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:shadow-[0px_1px_0px_0px_var(--pink-600)_inset,0px_-1px_0px_0px_var(--pink-400)_inset] ${
-            submitting ? "opacity-50 cursor-not-allowed" : ""
-          }`}
-          type="submit"
-          disabled={submitting}
-        >
+          className="px-16 py-2 rounded-full bg-[#020202] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#b4b5b4] transition-colors duration-200">
+
+        
+       
           {submitting ? "Enviando..." : "Solicitá un Asesor →"}
           <BottomGradient />
         </button>

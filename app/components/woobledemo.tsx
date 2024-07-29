@@ -54,10 +54,10 @@ export function WobbleCardDemo() {
         containerClassName="col-span-12 lg:col-span-6"
       >
         <h2 className="text-left text-balance text-xl lg:text-3xl font-semibold tracking-[-0.015em] text-white">
-        Etiqueta  h2
+        Title
         </h2>
         <p className="mt-4 text-left text-sm lg:text-base text-neutral-200">
-          Etiqueta P.
+          Description
         </p>
       </WobbleCard>
 
@@ -70,7 +70,11 @@ export function WobbleCardDemo() {
             containerClassName="bg-gray-400 h-[420px] lg:w-[320px]"
           >
          <h2
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -99,7 +103,11 @@ export function WobbleCardDemo() {
             containerClassName="bg-blue-400 h-[420px] lg:w-[320px]"
           >
                  <h2
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -128,7 +136,11 @@ export function WobbleCardDemo() {
             containerClassName="bg-blue-900 h-[420px] lg:w-[320px]"
           >
                 <h2
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
@@ -157,7 +169,11 @@ export function WobbleCardDemo() {
             containerClassName="bg-gray-900 h-[420px] lg:w-[320px]"
           >
                 <h2
+<<<<<<< HEAD
  
+=======
+
+>>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
   className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
   style={{ fontSize: '18px', fontWeight: 'bold' 
     }} // Aquí ajusta el tamaño del texto según lo necesario
