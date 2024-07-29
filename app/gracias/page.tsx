@@ -1,17 +1,16 @@
 import React from "react";
-import Navbar from "../components/nuevanav";
 import Image from "next/image";
-import familia4 from "../../public/assets/familia4.jpg";
-
+import macbook from "../../public/macbook.jpg";
+import Navbartailwind from "../components/navtailwind"
 export default function Gracias() {
   return (
     <section id="header" className="relative h-screen">
-      <Navbar />
+      <Navbartailwind />
       <div className="relative h-full">
         {/* Ajustar el contenedor de la imagen */}
         <div className="absolute inset-0 z-0 top-20">
           <Image
-            src={familia4}
+            src={macbook}
             alt="Gracias"
             layout="fill"
             objectFit="cover"
