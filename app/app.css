@@ -3,7 +3,7 @@
 
 /* styles/styles.css */
 body {
-  background-image: url('../public/macbook.jpg'); /* Ruta a tu imagen de fondo */
+  background-image: url(''); /* Ruta a tu imagen de fondo */
   background-attachment: fixed; /* Fondo fijo */
   background-size: cover; /* Ajuste para cubrir toda la pantalla */
   font-family: "acumin-variable",'Open Sans', sans-serif !important;
@@ -53,7 +53,7 @@ body {
     width: 180%; /* Aumenta el ancho del fondo para cubrir el espacio extra de la derecha */
     height: 100%;
     background-size: 180% auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../public/macbook.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
     background-size: 150% 100%; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
     background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
     opacity: 0.9; /* Ajusta la opacidad aquí */
@@ -67,7 +67,7 @@ body {
 }
 
 #nuestrosplanes {
-  background-image: url(../public/logof.jpg);
+  background-image: url();
 }
 
 
@@ -88,7 +88,7 @@ body {
   }
 }
 #sucursales {
-  background-image: url(../public/logof.jpg);
+  background-image: url();
 }
 
 #planesmostrar {

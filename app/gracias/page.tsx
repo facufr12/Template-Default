@@ -2,7 +2,6 @@ import React from "react";
 import macbook from "../../public/macbook.jpg";
 import Navbartailwind from "../components/navtailwind"
 import Image from "next/image";
-import fondomontaña from "../../public/fondomontaña.avif";
 
 export default function Gracias() {
   return (

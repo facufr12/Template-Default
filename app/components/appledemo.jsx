@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "./apple-cards-carousel";
-import logof from "../../public/logof.jpg"
 export function AppleCardsCarouselDemo() {
   const cards = data.map((card, index) => (
     <Card key={card.src} card={card} index={index} />
@@ -37,7 +36,7 @@ const DummyContent = () => {
               thought.
             </p>
             <Image
-              src={logof}
+              src="/"
               alt="Macbook mockup from Aceternity UI"
               height="500"
               width="500"

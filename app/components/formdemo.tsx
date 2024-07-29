@@ -13,12 +13,29 @@ export function SignupFormDemo() {
   const [error, setError] = useState(null);
   const router = useRouter();
 
+  // Variable para el Formulario.
+  const form = {
+    title: "Titulo",
+    etiquetap: "Acercanos tus datos de contacto",
+    input1: "Nombre y apellido",
+    input2: "Whatsapp",
+    input3: "Email",
+    input4: "Localidad",
+    input5: "Edad Del Titular",
+    input6: "Tipo De Afiliación",
+    input7: "Grupo Familiar",
+    buttoninput: "Solicitá un Asesor →"
+  };
+  
+  // Endpoint para poder enviar los Datos.
+  const URL = ""
+
   const onSubmit = async (e) => {
     e.preventDefault();
     setSubmitting(true);
 
     try {
-      const scriptURL ='';
+      const scriptURL = URL;
       const formData = new FormData(formRef.current);
 
       const response = await fetch(scriptURL, {
@@ -51,13 +68,13 @@ export function SignupFormDemo() {
     <div
       id="formid"
       className="max-w-md mt-4 mb-8   w-full mx-auto md:rounded-lg rounded-none md:rounded-xl p-2 md:p-8 shadow-input bg-white dark:bg-black"
-      style={{ borderRadius: '40px' }}
+      style={{ borderRadius: "40px" }}
     >
       <h2 className="font-bold text-xl lg:text-white-900 text-neutral-800 dark:text-neutral-200">
-        Solicitá Asesor
+        {form.title}
       </h2>
       <p className="text-neutral-600 text-sm max-w-sm mt-2 dark:text-neutral-300">
-        Nos pondremos en contacto a la brevedad
+        {form.etiquetap}
       </p>
 
       <form
@@ -69,7 +86,7 @@ export function SignupFormDemo() {
       >
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 mb-4">
           <LabelInputContainer>
-            <Label htmlFor="name">Nombre y Apellido</Label>
+            <Label htmlFor="name">{form.input1}</Label>
             <Input
               type="text"
               id="name"
@@ -79,7 +96,7 @@ export function SignupFormDemo() {
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="phone">Whatsapp</Label>
+            <Label htmlFor="phone">{form.input2}</Label>
             <Input
               type="tel"
               id="phone"
@@ -90,7 +107,7 @@ export function SignupFormDemo() {
           </LabelInputContainer>
         </div>
         <LabelInputContainer className="mb-4">
-          <Label htmlFor="email">Email </Label>
+          <Label htmlFor="email">{form.input3} </Label>
 
           <Input
             type="email"
@@ -107,7 +124,7 @@ export function SignupFormDemo() {
               htmlFor="edad-titular"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              Localidad
+              {form.input4}
             </Label>
             <Label>
               <select
@@ -155,7 +172,7 @@ export function SignupFormDemo() {
               htmlFor="edad-titular"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              Edad Del Titular
+              {form.input5}
             </Label>
             <select
               id="edad-titular"
@@ -218,7 +235,7 @@ export function SignupFormDemo() {
               htmlFor="tipo-afiliacion"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              Tipo De Afiliación
+              {form.input6}
             </Label>
             <select
               id="tipo-afiliacion"
@@ -236,7 +253,7 @@ export function SignupFormDemo() {
               htmlFor="grupo-familiar"
               className="block text-gray-700 text-sm font-medium mb-2"
             >
-              Grupo Familiar
+              {form.input7}
             </Label>
             <select
               id="grupo-familiar"
@@ -262,12 +279,8 @@ export function SignupFormDemo() {
             Ocurrió un error al enviar el formulario: {error}
           </div>
         )}
-        <button
-          className="px-16 py-2 rounded-full bg-[#020202] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#b4b5b4] transition-colors duration-200">
-
-        
-       
-          {submitting ? "Enviando..." : "Solicitá un Asesor →"}
+        <button className="px-16 py-2 rounded-full bg-[#020202] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-[#b4b5b4] transition-colors duration-200">
+          {submitting ? "Enviando..." : form.buttoninput}
           <BottomGradient />
         </button>
       </form>

@@ -1,22 +1,22 @@
+import { config } from "./config"; // Ajusta la ruta según donde guardes el archivo
 import { Montserrat } from "next/font/google";
 import "./globals.css";
 
 export const metadata = {
-  title: "Nombre Prepaga",
-  description: "Generado por Facu.f",
-
+  title: config.title,
+  description: config.description,
   icons: {
-    icon: ["/nombrefavion.png"]
-  }
+    icon: [config.favicon],
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <meta name="theme-color" content="#E82E8A" />
+      <meta name="theme-color" content={config.themeColor} />
       <body
         style={{
-          fontFamily: "'Acumin Variable Concept ExtraCo', Arial, sans-serif"
+          fontFamily: config.fontFamily,
         }}
       >
         {children}
