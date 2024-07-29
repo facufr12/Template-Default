@@ -1,14 +1,9 @@
 import React from "react";
-<<<<<<< HEAD
-import Image from "next/image";
 import macbook from "../../public/macbook.jpg";
 import Navbartailwind from "../components/navtailwind"
-=======
-import Navbartailwind from "../components/navtailwind";
 import Image from "next/image";
 import fondomontaña from "../../public/fondomontaña.avif";
 
->>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
 export default function Gracias() {
   return (
     <section id="header" className="relative h-screen">
@@ -17,11 +12,8 @@ export default function Gracias() {
         {/* Ajustar el contenedor de la imagen */}
         <div className="absolute inset-0 z-0 top-20">
           <Image
-<<<<<<< HEAD
             src={macbook}
-=======
             src={fondomontaña}
->>>>>>> a577e26a4b94f8cebcc6d1a1e9ff028eb41b45e4
             alt="Gracias"
             layout="fill"
             objectFit="cover"
