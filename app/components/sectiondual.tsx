@@ -4,7 +4,7 @@ const Sectiondual = () => {
   const textarea = {
     textareah1: "Apple",
     textareah2: "Iphone",
-    textareah3: "Macbook",
+    textareah3: "Macbook"
   };
   return (
     <section id="">
@@ -27,8 +27,8 @@ const Sectiondual = () => {
               {" "}
               {textarea.textareah1}{" "}
             </h2>
-            <p className="text-xl text-white">  {textarea.textareah2}.</p>
-            <span className="text-xl text-white">  {textarea.textareah3}</span>
+            <p className="text-xl text-white"> {textarea.textareah2}.</p>
+            <span className="text-xl text-white"> {textarea.textareah3}</span>
           </div>
         </div>
       </div>

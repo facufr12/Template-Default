@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @font-face {
-  font-family: 'acumin-variable';
-  src: url('fonts/AcuminVariableConcept-WideExtraLight.ttf') format('truetype'); /* Asegúrate de ajustar la ruta y el formato según tu fuente */
+  font-family: "acumin-variable";
+  src: url("fonts/AcuminVariableConcept-WideExtraLight.ttf") format("truetype"); /* Asegúrate de ajustar la ruta y el formato según tu fuente */
   /* Puedes agregar más formatos como woff, woff2, etc., para soporte multiplataforma */
 }
 
@@ -13,10 +13,12 @@
   --background-end-rgb: 255, 255, 255;
 }
 * {
-  
-  font-family: "acumin-variable",'Open Sans', sans-serif !important;
+  font-family: "acumin-variable", "Open Sans", sans-serif !important;
   font-weight: 400;
-  font-variation-settings: 'wght' 194.2857, 'wdth' 100, 'slnt' 0;
+  font-variation-settings:
+    "wght" 194.2857,
+    "wdth" 100,
+    "slnt" 0;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -24,7 +26,6 @@
   /* color: gray; */
 }
 body {
-  
   background-image: url(/app/assets/familia.jpg);
 }
 @media (prefers-color-scheme: dark) {

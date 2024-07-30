@@ -1,5 +1,5 @@
 import React from "react";
-import Navbartailwind from "../components/navtailwind"
+import Navbartailwind from "../components/navtailwind";
 import Image from "next/image";
 
 export default function Gracias() {

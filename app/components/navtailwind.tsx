@@ -14,7 +14,7 @@ const NavbarTailwind = () => {
   const menuItems = [
     { name: "Item1", href: "#" },
     { name: "Item2", href: "#" },
-    { name: "Item3", href: "#" },
+    { name: "Item3", href: "#" }
   ];
 
   // Variable para el botón "Solicitá Asesor"
@@ -25,7 +25,7 @@ const NavbarTailwind = () => {
       if (formElement) {
         formElement.scrollIntoView({ behavior: "smooth" });
       }
-    },
+    }
   };
 
   return (

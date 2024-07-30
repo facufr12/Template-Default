@@ -1,12 +1,9 @@
-
-
-
 /* styles/styles.css */
 body {
-  background-image: url(''); /* Ruta a tu imagen de fondo */
+  background-image: url(""); /* Ruta a tu imagen de fondo */
   background-attachment: fixed; /* Fondo fijo */
   background-size: cover; /* Ajuste para cubrir toda la pantalla */
-  font-family: "acumin-variable",'Open Sans', sans-serif !important;
+  font-family: "acumin-variable", "Open Sans", sans-serif !important;
   font-weight: 400;
   background-repeat: no-repeat;
   min-height: 100vh;
@@ -26,51 +23,45 @@ body {
 * {
   font-weight: 400;
   margin: 0;
-  
-  font-family: "acumin-variable",'Open Sans', sans-serif !important;
-  font-weight: 400; 
+
+  font-family: "acumin-variable", "Open Sans", sans-serif !important;
+  font-weight: 400;
   padding: 0;
   box-sizing: border-box;
   /* font-size: medium; */
   /* color: gray; */
 }
 
-
 #header {
   position: relative;
   min-height: 100vh;
 }
 
-
-
-
 @media (max-width: 768px) {
   .imgheader::before {
     content: "";
-    position:fixed;
+    position: fixed;
     top: 0%; /* Mueve la imagen hacia arriba un 1% del contenedor */
     right: -40%; /* Mueve la imagen hacia la derecha un 40% del contenedor */
     width: 180%; /* Aumenta el ancho del fondo para cubrir el espacio extra de la derecha */
     height: 100%;
     background-size: 180% auto;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("");
     background-size: 150% 100%; /* Ajusta el tamaño del fondo para cubrir el ancho extra */
     background-position: center top; /* Ajusta la posición de la imagen hacia arriba */
     opacity: 0.9; /* Ajusta la opacidad aquí */
     z-index: -1; /* Envía el pseudo-elemento detrás del contenido */
   }
-  #header{
+  #header {
     padding: auto;
     margin: auto;
   }
-  
 }
 
 #nuestrosplanes {
   background-image: url();
 }
-
-
 
 #formid {
   /* Default styles here */
@@ -84,7 +75,6 @@ body {
     margin-top: 50vh; /* Ajusta este valor según sea necesario */
     border-radius: 20px;
     min-height: 40rem; /* Ajusta este valor según sea necesario */
-    
   }
 }
 #sucursales {
@@ -92,7 +82,7 @@ body {
 }
 
 #planesmostrar {
-  background-color:whitesmoke;
+  background-color: whitesmoke;
 }
 
 #footer {
@@ -113,7 +103,6 @@ body {
   font-size: 20px;
   color: #fff7f7;
 }
-
 
 .izqpyme {
   padding: 0px 40px;
@@ -142,7 +131,6 @@ body {
   background-color: transparent;
   padding: 40px; /* Espaciado interno */
   overflow: hidden; /* Ocultar desbordamiento */
-  
 }
 
 .marquee {
@@ -185,9 +173,8 @@ body {
   background-color: #1f2531;
   width: 100%;
   white-space: pre-line;
-font-size: 12px;
-line-height: 1.875em;
-  
+  font-size: 12px;
+  line-height: 1.875em;
 }
 
 .section-footer-legal-title {

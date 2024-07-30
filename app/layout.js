@@ -1,13 +1,16 @@
-import { config } from "./config"; // Ajusta la ruta según donde guardes el archivo
-import { Montserrat } from "next/font/google";
+import { config } from "./config"; 
 import "./globals.css";
+
+
+  /* Para configurar estas variables ir al config.js */
+
 
 export const metadata = {
   title: config.title,
   description: config.description,
   icons: {
-    icon: [config.favicon],
-  },
+    icon: [config.favicon]
+  }
 };
 
 export default function RootLayout({ children }) {
@@ -16,7 +19,7 @@ export default function RootLayout({ children }) {
       <meta name="theme-color" content={config.themeColor} />
       <body
         style={{
-          fontFamily: config.fontFamily,
+          fontFamily: config.fontFamily
         }}
       >
         {children}

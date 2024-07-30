@@ -1,8 +1,6 @@
 import React from "react";
 
 const Footer = () => {
-
-    
   // Variables para el footer
   const footer = {
     prepagatitle: "prepagatitle",

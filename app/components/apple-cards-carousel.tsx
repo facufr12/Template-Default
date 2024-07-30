@@ -4,12 +4,12 @@ import React, {
   useRef,
   useState,
   createContext,
-  useContext,
+  useContext
 } from "react";
 import {
   IconArrowNarrowLeft,
   IconArrowNarrowRight,
-  IconX,
+  IconX
 } from "@tabler/icons-react";
 import { cn } from "../lib/utils";
 import { AnimatePresence, motion } from "framer-motion";
@@ -33,7 +33,7 @@ export const CarouselContext = createContext<{
   currentIndex: number;
 }>({
   onCardClose: () => {},
-  currentIndex: 0,
+  currentIndex: 0
 });
 
 export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
@@ -76,7 +76,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
       const scrollPosition = (cardWidth + gap) * (index + 1);
       carouselRef.current.scrollTo({
         left: scrollPosition,
-        behavior: "smooth",
+        behavior: "smooth"
       });
       setCurrentIndex(index);
     }
@@ -112,7 +112,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
               <motion.div
                 initial={{
                   opacity: 0,
-                  y: 20,
+                  y: 20
                 }}
                 animate={{
                   opacity: 1,
@@ -121,8 +121,8 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                     duration: 0.5,
                     delay: 0.2 * index,
                     ease: "easeOut",
-                    once: true,
-                  },
+                    once: true
+                  }
                 }}
                 key={"card" + index}
                 className="last:pr-[5%] md:last:pr-[33%]  rounded-3xl"
@@ -156,7 +156,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
 export const Card = ({
   card,
   index,
-  layout = false,
+  layout = false
 }: {
   card: Card;
   index: number;

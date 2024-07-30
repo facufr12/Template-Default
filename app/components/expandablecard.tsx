@@ -49,16 +49,16 @@ export function ExpandableCardDemo() {
               key={`button-${active.title}-${id}`}
               layout
               initial={{
-                opacity: 0,
+                opacity: 0
               }}
               animate={{
-                opacity: 1,
+                opacity: 1
               }}
               exit={{
                 opacity: 0,
                 transition: {
-                  duration: 0.05,
-                },
+                  duration: 0.05
+                }
               }}
               className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
               onClick={() => setActive(null)}
@@ -175,16 +175,16 @@ export const CloseIcon = () => {
   return (
     <motion.svg
       initial={{
-        opacity: 0,
+        opacity: 0
       }}
       animate={{
-        opacity: 1,
+        opacity: 1
       }}
       exit={{
         opacity: 0,
         transition: {
-          duration: 0.05,
-        },
+          duration: 0.05
+        }
       }}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
@@ -226,7 +226,7 @@ const cards = [
           accolades.
         </p>
       );
-    },
+    }
   },
   {
     description: "Babbu Maan",
@@ -248,7 +248,7 @@ const cards = [
           and abroad.
         </p>
       );
-    },
+    }
   },
 
   {
@@ -271,7 +271,7 @@ const cards = [
           both in the United States and abroad.
         </p>
       );
-    },
+    }
   },
   {
     description: "Led Zeppelin",
@@ -292,7 +292,7 @@ const cards = [
           following both in the United Kingdom and abroad.
         </p>
       );
-    },
+    }
   },
   {
     description: "Mustafa Zahid",
@@ -314,6 +314,6 @@ const cards = [
           versatile actor.
         </p>
       );
-    },
-  },
+    }
+  }
 ];

@@ -26,9 +26,9 @@ export function SignupFormDemo() {
     input7: "Grupo Familiar",
     buttoninput: "Solicitá un Asesor →"
   };
-  
+
   // Endpoint para poder enviar los Datos.
-  const URL = ""
+  const URL = "";
 
   const onSubmit = async (e) => {
     e.preventDefault();

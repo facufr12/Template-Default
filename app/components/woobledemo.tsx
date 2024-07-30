@@ -1,5 +1,4 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import { WobbleCard } from "./wobble-card";
 import { FaCheck } from "react-icons/fa";
@@ -9,10 +8,10 @@ export function WobbleCardDemo() {
   // Variables de los títulos y descripciones
   const titles = {
     prepaga1: "Titulo",
-    plantitle1:"MD150",
-    plantitle2:"MD250",
-    plantitle3:"MD350",
-    plantitle4:"MD450",
+    plantitle1: "MD150",
+    plantitle2: "MD250",
+    plantitle3: "MD350",
+    plantitle4: "MD450",
     prepaga2: "Titulo",
     check: [
       "Personalizar 1",
@@ -21,14 +20,14 @@ export function WobbleCardDemo() {
       "Personalizar 4",
       "Personalizar 5",
       "Personalizar 6",
-      "Personalizar 7",
+      "Personalizar 7"
     ],
     planDescriptions: [
       "Plan MD150 Description.",
       "Plan MD250 Description.",
       "Plan MD350 Description.",
-      "Plan MD450 Description.",
-    ],
+      "Plan MD450 Description."
+    ]
   };
 
   // Variables de los enlaces de los planes
@@ -36,7 +35,7 @@ export function WobbleCardDemo() {
     "https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD150",
     "https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD250",
     "https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD350",
-    "https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD450",
+    "https://medicals.ar/planes-medicina-prepaga/cotizar/index.html#plan-MD450"
   ];
 
   return (
@@ -88,9 +87,11 @@ export function WobbleCardDemo() {
               {titles.plantitle1}
             </h2>
             <div className="flex flex-col justify-center items-center h-full">
-              <p className="text-sm text-center">{titles.planDescriptions[0]}</p>
+              <p className="text-sm text-center">
+                {titles.planDescriptions[0]}
+              </p>
               <button
-                onClick={() => window.location.href = planLinks[0]}
+                onClick={() => (window.location.href = planLinks[0])}
                 className="px-12 py-4 mt-6 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-200 transition-colors duration-200"
               >
                 Ver Más
@@ -109,13 +110,14 @@ export function WobbleCardDemo() {
               className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
               style={{ fontSize: "18px", fontWeight: "bold" }} // Ajusta el tamaño del texto
             >
-              
               {titles.plantitle2}
             </h2>
             <div className="flex flex-col justify-center items-center h-full">
-              <p className="text-sm text-center">{titles.planDescriptions[1]}</p>
+              <p className="text-sm text-center">
+                {titles.planDescriptions[1]}
+              </p>
               <button
-                onClick={() => window.location.href = planLinks[1]}
+                onClick={() => (window.location.href = planLinks[1])}
                 className="mt-6 px-12 py-4 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-400 transition-colors duration-200"
               >
                 Ver Más
@@ -134,13 +136,14 @@ export function WobbleCardDemo() {
               className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
               style={{ fontSize: "18px", fontWeight: "bold" }} // Ajusta el tamaño del texto
             >
-              
               {titles.plantitle3}
             </h2>
             <div className="flex flex-col justify-center items-center h-full">
-              <p className="text-sm text-center">{titles.planDescriptions[2]}</p>
+              <p className="text-sm text-center">
+                {titles.planDescriptions[2]}
+              </p>
               <button
-                onClick={() => window.location.href = planLinks[2]}
+                onClick={() => (window.location.href = planLinks[2])}
                 className="mt-6 px-12 py-4 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-blue-800 transition-colors duration-200"
               >
                 Ver Más
@@ -159,13 +162,14 @@ export function WobbleCardDemo() {
               className="px-12 py-4 rounded-full bg-[transparent] font-bold text-white tracking-widest uppercase transform hover:scale-105 transition-colors duration-200"
               style={{ fontSize: "18px", fontWeight: "bold" }} // Ajusta el tamaño del texto
             >
-              
               {titles.plantitle4}
             </h2>
             <div className="flex flex-col justify-center items-center h-full">
-              <p className="text-sm text-center">{titles.planDescriptions[3]}</p>
+              <p className="text-sm text-center">
+                {titles.planDescriptions[3]}
+              </p>
               <button
-                onClick={() => window.location.href = planLinks[3]}
+                onClick={() => (window.location.href = planLinks[3])}
                 className="mt-6 px-12 py-4 rounded-full bg-[#075757] font-bold text-white tracking-widest uppercase transform hover:scale-105 hover:bg-gray-800 transition-colors duration-200"
               >
                 Ver Más

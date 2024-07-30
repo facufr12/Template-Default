@@ -2,8 +2,7 @@ import React from "react";
 import { SignupFormDemo } from "./formdemo";
 import NavbarTailwind from "./navtailwind";
 const Header = () => {
-  
-  // Variable para el texto 
+  // Variable para el texto
   const textheader = {
     texth1: "Apple",
     texth2: "Macbook",

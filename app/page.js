@@ -1,9 +1,5 @@
-import Image from "next/image";
-import Link from "next/link";
 import "./app.css";
-import Navbartailwind from "./components/navtailwind";
 import Footer from "./components/footer";
-import { SignupFormDemo } from "./components/formdemo";
 import { WobbleCardDemo } from "./components/woobledemo";
 import Header from "./components/header";
 import Marquee from "./components/marquee";
@@ -14,10 +10,10 @@ export default function Home() {
   return (
     <main>
       {/* componente en : ./components, /Header.tsx */}
-      <Header />
       <section id="planes">
+        <Header />
         <div className="max-w-screen-xl mx-auto py-8">
-          {/* componente en : ./components, /Woobledemo.tsx */}
+          {/* componente en : ./components, /Woobledemo.tsx Aceternity UI*/}
           <WobbleCardDemo />
         </div>
 
@@ -29,10 +25,10 @@ export default function Home() {
         {/* componente en : ./components, /Sectiondunal */}
         <Sectiondual />
 
-        {/* componente en : ./components, /Appledemo */}
+        {/* componente en : ./components, /Appledemo  Aceternity UI*/}
         <AppleCardsCarouselDemo />
 
-        {/* componente en : ./components, /ExpandableCard */}
+        {/* componente en : ./components, /ExpandableCard Aceternity UI */}
         <ExpandableCardDemo />
       </section>
       <footer>

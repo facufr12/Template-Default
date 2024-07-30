@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React from "react";
 import { Carousel, Card } from "./apple-cards-carousel";
@@ -10,7 +10,7 @@ export function AppleCardsCarouselDemo() {
   return (
     <div className="w-full h-full py-20">
       <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 text-white dark:text-neutral-200 font-sans">
-       Planes Disponibles
+        Planes Disponibles
       </h2>
       <Carousel items={cards} />
     </div>
@@ -54,49 +54,49 @@ const data = [
     category: "PLAN",
     title: "Plan MD 150",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD150.webp",
-    content: <DummyContent />,
+    content: <DummyContent />
   },
   {
     category: "PLAN",
     title: "Plan MD 250",
-       src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD250.webp",
-    content: <DummyContent />,
+    src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD250.webp",
+    content: <DummyContent />
   },
   {
     category: "PLAN",
     title: "Plan MD 350",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD350.webp",
-    content: <DummyContent />,
+    content: <DummyContent />
   },
 
   {
     category: "PLAN",
     title: "Plan MD 450",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD450.webp",
-    content: <DummyContent />,
+    content: <DummyContent />
   },
   {
     category: "PLAN",
     title: "Plan MD 150",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD150.webp",
-    content: <DummyContent />,
+    content: <DummyContent />
   },
   {
     category: "PLAN",
     title: "Plan MD 250",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD250.webp",
-    content: <DummyContent />,
+    content: <DummyContent />
   },
   {
     category: "PLAN",
     title: "Plan MD 350",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD350.webp",
-    content: <DummyContent />,
+    content: <DummyContent />
   },
   {
     category: "PLAN",
     title: "Plan MD 450",
     src: "https://medicals.ar/planes-medicina-prepaga/cotizar/assets/img/MD450.webp",
-    content: <DummyContent />,
-  },
+    content: <DummyContent />
+  }
 ];
